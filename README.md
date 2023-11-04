@@ -1,2 +1,2 @@
 # JSPRACTICE
-this repo is for javascript practice
+This repository contains basics to advanced codes of Javascript.
