@@ -10,3 +10,11 @@ console.log(date2.toDateString());
 
 let date3=new Date("11-19-2023")
 console.log(date3.toLocaleString())
+console.log(date3.getTime())
+
+let timestamp=Date.now();
+console.log(Math.round(timestamp/1000))
+
+date3.toLocaleString('default',{
+    weekday:"long"
+})
