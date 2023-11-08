@@ -35,3 +35,8 @@ const min=10
 const max=20
 
 console.log(Math.random() * (max-min+1) + min)
+
+/* math.random() func gives values in the range of 0-1
+but when we multiply this by 10 in some cases there is possibility that values remains under 1 only
+for example 0.01 on multiplication with 10 gives 0.1, so to tackle this problem what we do is to add 1
+thus making the formula => console.log((math.random()*10) +1).*/
