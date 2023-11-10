@@ -33,3 +33,29 @@ console.log("B",n1)
 const myn2=n1.splice(1,3)
 console.log(myn2)
 console.log("C",n1)
+
+/* So, basically we can see that there are two differences in the slice and splice function
+DIFFERENCE 1 =>  In Slice final index value is not counted whereas in Splice fina; index value is also counted.
+DIFFERENCE 2 => In slice the original array is not changed after performing slice as copy of original array is used
+whereas in Splice original array is changed after performing the function.*/
+
+const marvel=["cap","nat","ironman","thor"]
+const DC=["batman","joker","aquaman"]
+
+//marvel.push(DC)
+
+//console.log(marvel)
+
+//console.log(marvel[4][2])
+
+const all=marvel.concat(DC)
+console.log(all)
+//this is concat operator
+
+const all_new=[...marvel,...DC]
+console.log(all_new)
+//this is spread operator it basically spreads the entire array into single elements, it is preferred more than concat and push.
+
+const newarr1=[1,2,3,[6,7,8],10,12,[13,[14,15,16]]]
+const newarr2=newarr1.flat(Infinity)
+console.log(newarr2)
