@@ -59,3 +59,19 @@ console.log(all_new)
 const newarr1=[1,2,3,[6,7,8],10,12,[13,[14,15,16]]]
 const newarr2=newarr1.flat(Infinity)
 console.log(newarr2)
+//Basically The flat() method of Array instances creates a new array with all sub-array elements concatenated into it recursively up to the specified depth. 
+console.log(Array.isArray("vivek"))
+console.log(Array.isArray([1,2,3,4,5]))
+console.log(Array.from("Vivek"))
+console.log(Array.from("123456"))
+//isArray is used to check if the datatype is array or not
+//fromArray is used to convert any kind of datatype into array
+console.log(Array.from({name:"vivek"}))
+// this is a very interesting case as from method is not able to convert this directly into
+// array. you have to specify in this case if you wwant array of keys or array of values
+
+let score1=100;
+let score2=200;
+let score3=300;
+
+console.log(Array.of(score1,score2,score3))
