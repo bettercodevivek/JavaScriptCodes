@@ -75,3 +75,9 @@ let score2=200;
 let score3=300;
 
 console.log(Array.of(score1,score2,score3))
+
+let val1=500
+let val2=600
+let val3=700
+
+console.log(Array.of(val1,val2,val3))
