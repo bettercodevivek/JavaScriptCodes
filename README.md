@@ -2,4 +2,5 @@
 
 <h4 align="center">This repository contains basics to advanced codes of Javascript.<br>
 I try to update this repository daily with JavaScript codes and
-concepts that i learn and implement.</h4>
+concepts that i learn and implement.<br>
+All the concepts i learn i try to put them into comments to make the code readable and easier to understand.</h4>
