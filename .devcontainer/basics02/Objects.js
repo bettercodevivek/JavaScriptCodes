@@ -14,3 +14,14 @@ const obj1={
 
 console.log(obj1.name)
 console.log(obj1["address"])
+
+
+const obj2 = {
+    name1:"superman",
+    address1:"krypton",
+    age1:36,
+    email1:"superman@gmail.com"
+}
+
+console.log(obj2.name1)
+console.log(obj2["address1","email1","age1"])
