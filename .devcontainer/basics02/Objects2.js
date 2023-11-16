@@ -39,3 +39,42 @@ console.log(obj2.fullname.username)
  const object3= Object.assign({},object1,object2)
 
  console.log(object3)
+
+ // This is one way of mergin two objects by using assign operator
+ // But mostly we will merge two or more objects using the spread operator just like we did in arrays
+
+ const object4 ={...object1,...object2}
+ console.log(object4)
+
+
+ // Now let us understand how we can access objects if data is recieved from the database
+ // when data is recieved from database it comes as a array of objects
+
+  const users = [
+    {
+        value22:"hello",
+        value23:"goodnight"
+    },
+    {
+        value22:"hello",
+        value23:"goodnight"
+    },
+    {
+        value22:"hello",
+        value23:"goodnight"
+    },
+    {
+        value22:"hello",
+        value23:"goodnight"
+    },
+    {
+        value22:"hello",
+        value23:"goodnight"
+    }
+  ]
+
+  console.log(users[1].value22)
+
+  console.log(Object.keys(users))
+
+  console.log(Object.keys(obj1))
