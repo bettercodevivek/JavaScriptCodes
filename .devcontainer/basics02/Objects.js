@@ -60,3 +60,16 @@ obj3.greeting = function(){
 }
 
 console.log(obj3.greeting())
+
+//Basically this is the way to declare a function inside an object.
+ // here we created a function called greeting which prints hello git user on being called
+ // now we can modify this also like this....
+
+ obj3.greeting2 = function(){
+    console.log(`hello git user, ${this.name3}`)
+ }
+
+ console.log(obj3.greeting2())
+
+ // Thus, we can create a function to print something addresssing with respect to a
+ // particular value using string interpolation as we have seen in above example
