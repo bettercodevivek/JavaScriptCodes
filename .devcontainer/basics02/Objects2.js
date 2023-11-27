@@ -141,3 +141,13 @@ console.log(obj2.fullname.username)
   // now after this whenever we need to  access courseInst it will be something like this
 
   console.log(courseInst)
+
+  // An example of JSON syntax is as follows:-
+  // this is just introduction to JSON
+
+  /* {
+    "name":"vivek",
+    "height":"180",
+     "email":"NaN"
+  }
+  */
