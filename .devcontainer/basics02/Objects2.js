@@ -124,3 +124,20 @@ console.log(obj2.fullname.username)
   console.log(array2[1].val6)
 
   console.log(Object.keys(batman))
+
+
+  const course = {
+    courseInst:"vivek",
+    price:"999",
+    coursename:"JavaScript101"
+  }
+
+  console.log(course.courseInst)
+  // So, this is basically one way of accessing object properties and their values, but this
+  // method is not that good so we should use another method mentioned below:-
+
+  const {courseInst}= course
+
+  // now after this whenever we need to  access courseInst it will be something like this
+
+  console.log(courseInst)
