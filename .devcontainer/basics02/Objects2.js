@@ -78,3 +78,49 @@ console.log(obj2.fullname.username)
   console.log(Object.keys(users))
 
   console.log(Object.keys(obj1))
+
+  const batman = {
+    name5:"billy",
+    email5:"billy@lilly.com",
+    address5:{
+        firsthome:{
+            lasthome:{
+                endhome:"gotham"
+            }
+        }
+    },
+    loggedIN:true
+  }
+
+  console.log(batman.address5.firsthome.lasthome)
+
+  const bat1 = new Object()
+  bat1.name6="hellobro"
+  bat1.size="huge"
+  bat1.power="strength"
+  console.log(bat1.name6)
+
+
+  const array2 = [
+    {
+        val5:"yes",
+        val6:"no"
+    },
+    {
+        val5:"yes",
+        val6:"no"
+    },
+    {
+        val5:"yes",
+        val6:"no"
+    },
+    {
+        val5:"yes",
+        val6:"no"
+    }
+  ]
+
+  console.log(array2[1].val5)
+  console.log(array2[1].val6)
+
+  console.log(Object.keys(batman))
