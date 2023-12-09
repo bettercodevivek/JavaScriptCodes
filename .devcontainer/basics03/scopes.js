@@ -19,3 +19,28 @@ console.log(b)
 
 // The above example clearly explains the difference between global scope and local scope of a
 // variable
+
+if(true){
+    const username = "vivek"
+    if(username==="vivek"){
+        const site =" github"
+        console.log(username+site)
+    }
+   // console.log(site)
+}
+//console.log(username)
+
+// this if statement block is a clear example for how the value of a variable does not
+// exist outside its scope unless its declared globally
+
+ console.log(addone(9))
+function addone(num){
+    return num+1
+}
+
+
+console.log(addtwo(7))
+const addtwo = function(num){
+    return num+2
+}
+
