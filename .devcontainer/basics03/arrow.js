@@ -15,3 +15,5 @@ user.welcomemessage()
 user.username = "steve"
 
 user.welcomemessage()
+
+// this keyword is basically used to represent the object within which the function is declared
