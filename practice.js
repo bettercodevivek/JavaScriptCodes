@@ -46,11 +46,18 @@ console.log(name1);
 car_name='maruti';
 var car_name;
 
-car_name2='honda';
-let car_name2;
+//car_name2='honda';
+//let car_name2;
 
 
-console.log({car_name,car_name2});
+//console.log({car_name,car_name2});
 // this above example shows that var defined variables can be hoisted at the top but when it comes to let defined variables
 // hoisting is not possible
 // Hoisting basically means usage of a variable before its initialisation or declaration.
+
+const pi=3.142587;
+pi=2.14;
+console.log(pi);
+
+// const declared variable cannot be reassigned a value whereas it is possible with let and assigment should take place with declaration only
+// first declaring and then assigning will result in error
