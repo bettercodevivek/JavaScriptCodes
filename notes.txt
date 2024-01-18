@@ -1,0 +1,13 @@
+javascript accepts both single quotes as well as double quotes in getElementById and others.
+In js, you can use it to even change src of img by using onclick only.
+similarly like we changed innerHTMl of para.
+In HTML, JavaScript code is inserted between <script> and </script> tags.
+Scripts can be placed in the <body>, or in the <head> section of an HTML page, or in both.
+Placing scripts at the bottom of the <body> element improves the display speed, 
+because script interpretation slows down the display.
+
+JavaScript can "display" data in different ways:
+1.Writing into an HTML element, using innerHTML.
+2.Writing into the HTML output using document.write().
+3.Writing into an alert box, using window.alert().
+4.Writing into the browser console, using console.log().
