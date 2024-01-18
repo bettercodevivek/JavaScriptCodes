@@ -35,3 +35,22 @@ let carname;
 console.log(typeof carname);
 
 // if you dont define your variable value, then it be undefined.
+
+// you cannot redeclare a variable if it is already declared using let or var, but you can redeclare the variable if it is declared using var.
+
+var name1="hello";
+var name1="notello";
+
+console.log(name1);
+
+car_name='maruti';
+var car_name;
+
+car_name2='honda';
+let car_name2;
+
+
+console.log({car_name,car_name2});
+// this above example shows that var defined variables can be hoisted at the top but when it comes to let defined variables
+// hoisting is not possible
+// Hoisting basically means usage of a variable before its initialisation or declaration.
