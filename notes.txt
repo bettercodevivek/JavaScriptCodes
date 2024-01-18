@@ -19,3 +19,7 @@ triggers the document.write() in that case existing HTML gets deleted)
 JavaScript does not have any print object or print methods.
 You cannot access output devices from JavaScript.
 The only exception is that you can call the window.print() method in the browser to print the content of the current window.
+
+The var keyword was used in all JavaScript code from 1995 to 2015.
+The let and const keywords were added to JavaScript in 2015.
+The var keyword should only be used in code written for older browsers.
