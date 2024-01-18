@@ -8,6 +8,9 @@
 <body>
     <p id="para1">hello world!</p>
     <button class="but" onclick="Viewer()">click here</button>
+    <button class="but2" onclick="writer()">click to rewrite</button>
+    <button class="but3" onclick="console.log('hey this button writes stuff in browser console')">click for console</button>
+    <button class="but4" onclick="window.print()">click for print</button>
     <p id="para2"></p>
     <script>
   function Viewer(){
@@ -15,7 +18,9 @@
   }
   document.getElementById('para2').innerHTML='hey i m just learning how we can use js to write inside an html element';
 
+function writer(){
   document.write('Lets try and erase everything')
+}
     </script>
 </body>
 </html>

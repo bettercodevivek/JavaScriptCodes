@@ -11,3 +11,11 @@ JavaScript can "display" data in different ways:
 2.Writing into the HTML output using document.write().
 3.Writing into an alert box, using window.alert().
 4.Writing into the browser console, using console.log().
+
+Using document.write() after an HTML document is loaded, will delete all existing HTML( basically
+,normally when you use document.write() toh kuch change  nahi hoga but when you create a button which onclick 
+triggers the document.write() in that case existing HTML gets deleted)
+
+JavaScript does not have any print object or print methods.
+You cannot access output devices from JavaScript.
+The only exception is that you can call the window.print() method in the browser to print the content of the current window.
