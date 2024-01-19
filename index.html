@@ -29,23 +29,24 @@
    <h2 class="calc-heading">Let's make a calculator</h2>
      
    <div class="calc-container">
-    <div id="display-screen" class="display-screen">
-      <input id="screen" class="screen" type="text" placeholder="Enter Value">
-    </div>
+    <form id="display-screen" class="display-screen" name="form1">
+      <input id="screen" class="screen" type="text" name="inp" placeholder="Enter Value">
+    </form>
     <div class="num-container">
-      <button class="num" value="0" onclick="listen(0)">0</button>
-      <button class="num" value="1" onclick="listen(1)">1</button>
-      <button class="num" value="2" onclick="listen(2)">2</button>
-      <button class="num" value="3" onclick="listen(3)">3</button>
-      <button class="num" value="4" onclick="listen(4)">4</button>
-      <button class="num" value="5" onclick="listen(5)">5</button>
-      <button class="num" value="6" onclick="listen(6)">6</button>
-      <button class="num" value="7" onclick="listen(7)">7</button>
-      <button class="num" value="8" onclick="listen(8)">8</button>
-      <button class="num" value="9" onclick="listen(9)">9</button>
+      <button class="num" value="0" id="num0" onclick="form1.inp.value+=0">0</button>
+      <button class="num" value="0" id="num0" onclick="form1.inp.value+=1">1</button>
+      <button class="num" value="0" id="num0" onclick="form1.inp.value+=2">2</button>
+      <button class="num" value="0" id="num0" onclick="form1.inp.value+=3">3</button>
+      <button class="num" value="0" id="num0" onclick="form1.inp.value+=4">4</button>
+      <button class="num" value="0" id="num0" onclick="form1.inp.value+=5">5</button>'
+      <button class="num" value="0" id="num0" onclick="form1.inp.value+=6">6</button>
+      <button class="num" value="0" id="num0" onclick="form1.inp.value+=7">7</button>
+      <button class="num" value="0" id="num0" onclick="form1.inp.value+=8">8</button>
+      <button class="num" value="0" id="num0" onclick="form1.inp.value+=9">9</button>
+      
     </div>
     <div class="op-container">
-      <button class="add-but" onclick="Add()">+</button>
+      <button class="add-but" value="+" onclick="Add()">+</button>
       <button class="sub-but" onclick="Subtract()">-</button>
       <button class="mult-but" onclick="Mult()">x</button>
       <button class="divide-but" onclick="Divide()">/</button>
@@ -69,11 +70,6 @@ function listChanger(){
   const listarr=['bhindi','gajar','tori'];
   console.log(listarr);
   document.getElementById('item1').innerHTML=listarr[0];
-}
-function listen(x){
-  var val=document.getElementById('screen').innerText;
-  val=val+x;
-  console.log(val);
 }
 
     </script>
