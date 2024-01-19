@@ -56,8 +56,39 @@ var car_name;
 // Hoisting basically means usage of a variable before its initialisation or declaration.
 
 const pi=3.142587;
-pi=2.14;
+//pi=2.14;
 console.log(pi);
 
 // const declared variable cannot be reassigned a value whereas it is possible with let and assigment should take place with declaration only
 // first declaring and then assigning will result in error
+
+const carArr = ['toyota','suzuki','honda'];
+//carArr=['fortuner','thar','swift'];
+console.log(carArr[0]);
+
+// thus we can clearly see that we use const to define arrays and objects when we dont want any kind of reassignment of the values stores,
+// though we can add new values, or we can change the values individually.... for example
+carArr[1]='fortuner';
+carArr.push('thar');
+console.log(carArr);
+
+// now lets see the same thing for an object
+
+const carObj={
+    color:'red',
+    model:'2010',
+    name:'scorpio'
+}
+console.log(carObj);
+
+carObj.color='yellow';
+
+console.log(carObj);
+
+carObj={
+    color:'blue',
+    model:'2015',
+    name:'swift'
+}
+
+// thus we can clearly see that even in the case of objects, reassignment is not possible only changing individual properties in possible.
