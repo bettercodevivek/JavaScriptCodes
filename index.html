@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href=""
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <p id="para1">hello world!</p>
@@ -30,15 +30,15 @@
      
    <div class="calc-container">
     <div class="display-screen">
-      lorem 
+      <input id="screen" class="screen" type="text">
     </div>
     <div class="op-container">
-      <button class="add-but">+</button>
-      <button class="sub-but">-</button>
-      <button class="mult-but">x</button>
-      <button class="divide-but">/</button>
-      <button class="mod-but">%</button>
-      <button class="result-but">=</button>
+      <button class="add-but" onclick="Add()">+</button>
+      <button class="sub-but" onclick="Subtract()">-</button>
+      <button class="mult-but" onclick="Mult()">x</button>
+      <button class="divide-but" onclick="Divide()">/</button>
+      <button class="mod-but" onclick="Modulus()">%</button>
+      <button class="result-but" onclick="Result()">=</button>
     </div>
    </div>
 
