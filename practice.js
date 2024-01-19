@@ -85,10 +85,26 @@ carObj.color='yellow';
 
 console.log(carObj);
 
-carObj={
+/*carObj={
     color:'blue',
     model:'2015',
     name:'swift'
-}
+}*/
 
 // thus we can clearly see that even in the case of objects, reassignment is not possible only changing individual properties in possible.
+
+/***********************************************************JAVASCRIPT OPERATORS **********************************************/
+
+let num1 = 2;
+let num2 = 3;
+
+let add = num1+num2;
+let prod=num1*num2;
+let subtract=num1-num2;
+let divide=num1/num2;
+let expo=num1**num2;
+let remainder=num1%num2;
+let increment=num1++;
+let decrement=num2--;
+
+console.log({add,prod,subtract,divide,expo,remainder,increment,decrement});
