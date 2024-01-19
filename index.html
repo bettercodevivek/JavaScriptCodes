@@ -8,10 +8,24 @@
 <body>
     <p id="para1">hello world!</p>
     <button class="but" onclick="Viewer()">click here</button>
+
     <button class="but2" onclick="writer()">click to rewrite</button>
+
     <button class="but3" onclick="console.log('hey this button writes stuff in browser console')">click for console</button>
+
     <button class="but4" onclick="window.print()">click for print</button>
+
     <p id="para2"></p>
+
+   <ul class="list1">
+    <li class="item">potato</li>
+    <li class="item">tomato</li>
+    <li class="item">aubergine</li>
+   </ul>
+  
+   <button class="but5" onclick="listChanger()">click for changing list</button>
+
+
     <script>
   function Viewer(){
     let word='i got changed by javascript...yayyyy';
@@ -21,6 +35,11 @@
 
 function writer(){
   document.write('Lets try and erase everything')
+}
+
+function listChanger(){
+  const listarr=['bhindi','gajar','tori'];
+  document.getElementById('list1').innerHTML=listarr;
 }
     </script>
 </body>
