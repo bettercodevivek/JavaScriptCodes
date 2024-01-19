@@ -29,8 +29,20 @@
    <h2 class="calc-heading">Let's make a calculator</h2>
      
    <div class="calc-container">
-    <div class="display-screen">
-      <input id="screen" class="screen" type="text">
+    <div id="display-screen" class="display-screen">
+      <input id="screen" class="screen" type="text" placeholder="Enter Value">
+    </div>
+    <div class="num-container">
+      <button class="num" value="0" onclick="listen(0)">0</button>
+      <button class="num" value="1" onclick="listen(1)">1</button>
+      <button class="num" value="2" onclick="listen(2)">2</button>
+      <button class="num" value="3" onclick="listen(3)">3</button>
+      <button class="num" value="4" onclick="listen(4)">4</button>
+      <button class="num" value="5" onclick="listen(5)">5</button>
+      <button class="num" value="6" onclick="listen(6)">6</button>
+      <button class="num" value="7" onclick="listen(7)">7</button>
+      <button class="num" value="8" onclick="listen(8)">8</button>
+      <button class="num" value="9" onclick="listen(9)">9</button>
     </div>
     <div class="op-container">
       <button class="add-but" onclick="Add()">+</button>
@@ -41,17 +53,6 @@
       <button class="result-but" onclick="Result()">=</button>
     </div>
    </div>
-
-
-
-
-
-
-
-
-
-
-
 
     <script>
   function Viewer(){
@@ -69,6 +70,12 @@ function listChanger(){
   console.log(listarr);
   document.getElementById('item1').innerHTML=listarr[0];
 }
+function listen(x){
+  var val=document.getElementById('screen').innerText;
+  val=val+x;
+  console.log(val);
+}
+
     </script>
 </body>
 </html>
