@@ -18,7 +18,7 @@
 
     <p id="para2"></p>
 
-   <ul class="list1">
+   <ul id="list1">
     <li class="item1">potato</li>
     <li class="item">tomato</li>
     <li class="item">aubergine</li>
@@ -47,9 +47,7 @@ function writer(){
 }
 
 function listChanger(){
-  const listarr=['bhindi','gajar','tori'];
-  console.log(listarr);
-  document.getElementById('item1').innerHTML=listarr[0];
+ document.getElementById('list1').innerHTML=list2;
 }
 function prompter(){
 let user=prompt('please enter your name');
