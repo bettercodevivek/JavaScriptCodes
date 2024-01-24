@@ -32,6 +32,7 @@
    <div id="calci" class="calci">
     <button id="add" onclick="prompter()">+</button>
     <button id="multiply" onclick="prompter2()">x</button>
+    <button id="confirm" onclick="confirmer()">click to confirm</button>
    </div>
 
     <script>
@@ -72,6 +73,15 @@ function prompter2(){
     store='kaisa hai'+usrr+'bhai';
   }
   alert(store);
+}
+function confirmer(){
+  let abc=window.confirm('please confirm your presence');
+  if(abc==1){
+    alert('great response!\n you clicked on ok');
+  }
+  else{
+    alert('you clicked on cancel');
+  }
 }
 
     </script>
