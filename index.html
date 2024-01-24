@@ -29,8 +29,8 @@
     display here!
   </div>
 
-   <div class="calci">
-    <button id="add" onclick="add()">+</button>
+   <div id="calci" class="calci">
+    <button id="add" onclick="prompter()">+</button>
     <button id="multiply" onclick="multiply()">x</button>
    </div>
 
@@ -49,6 +49,28 @@ function listChanger(){
   const listarr=['bhindi','gajar','tori'];
   console.log(listarr);
   document.getElementById('item1').innerHTML=listarr[0];
+}
+function prompter(){
+let user=prompt('please enter your name');
+let text='';
+if(user==null||user==""){
+  text='user cancelled prompt';
+}
+else{
+  text= "hello "+user+" kaisa hai bro ?";
+}
+alert(text);
+}
+
+function prompter2(){
+  window.onload=prompt('naam bata');
+  let store='';
+  if(prompt==null){
+    store='lawda';
+  }
+  else{
+    store='kaisa hai'+prompt+'lundure';
+  }
 }
 
     </script>
