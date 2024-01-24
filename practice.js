@@ -128,3 +128,25 @@ let msg3=stringmaker(msg1,msg2);
 console.log(msg3);
 
 /**************************************OBJECTS****************************************/
+// this is object defined as a literal
+const obj1={
+    name:'batman',
+    height:'6ft',
+    ethnicity:'white'
+}
+
+console.log(obj1);
+
+// this is object defined as a constructor
+ const obj2 = new Object();
+    obj2.name2='superman',
+    obj2.location='krypton',
+    obj2.ethnicity='white'
+ console.log(obj2);
+
+ const obj3= new Object();
+ obj3.name3='selmon';
+ obj3.car='hummer';
+ obj3.house='panvel';
+
+ console.log(obj3);
