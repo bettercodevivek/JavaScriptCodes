@@ -108,3 +108,13 @@ let increment=num1++;
 let decrement=num2--;
 
 console.log({add,prod,subtract,divide,expo,remainder,increment,decrement});
+
+/********************************************Functions*****************************************************/
+
+function productmaker(val1,val2){
+    return val1*val2 ;
+}
+
+let val3=productmaker(55,44);
+let val4=productmaker;
+console.log({val3,val4});

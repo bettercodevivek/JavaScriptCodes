@@ -37,3 +37,6 @@ let and const must be declared before use.
 let and const does not bind to this.
 
 let and const are not hoisted.
+
+Accessing a function with incorrect parameters can return an incorrect answer:
+Accessing a function without () returns the function and not the function result:
