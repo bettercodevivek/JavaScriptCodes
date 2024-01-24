@@ -118,3 +118,13 @@ function productmaker(val1,val2){
 let val3=productmaker(55,44);
 let val4=productmaker;
 console.log({val3,val4});
+
+ let msg1='bhai please';
+ let msg2='requeshet';
+function stringmaker(msg1,msg2){
+    return `your string is ${msg1+msg2}`;
+}
+let msg3=stringmaker(msg1,msg2);
+console.log(msg3);
+
+/**************************************OBJECTS****************************************/
