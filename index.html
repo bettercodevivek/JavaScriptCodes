@@ -25,8 +25,14 @@
    </ul>
   
    <button class="but5" onclick="listChanger()">click for changing list</button>
+  <div class="display">
+    display here!
+  </div>
 
-   
+   <div class="calci">
+    <button id="add" onclick="add()">+</button>
+    <button id="multiply" onclick="multiply()">x</button>
+   </div>
 
     <script>
   function Viewer(){
@@ -44,7 +50,18 @@ function listChanger(){
   console.log(listarr);
   document.getElementById('item1').innerHTML=listarr[0];
 }
-
+function add(val1,val2){
+  let val1=21;
+  let val2=45;
+  let val3=val1+val2;
+  return val3;
+  document.getElementById('display').innerHTML='val3';
+}
+function multiply(val1,val2){
+  let val3=val1*val2;
+  return val3;
+  document.getElementById('display').innerHTML='val3';
+}
     </script>
 </body>
 </html>
