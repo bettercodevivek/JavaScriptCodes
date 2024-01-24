@@ -31,7 +31,7 @@
 
    <div id="calci" class="calci">
     <button id="add" onclick="prompter()">+</button>
-    <button id="multiply" onclick="multiply()">x</button>
+    <button id="multiply" onclick="prompter2()">x</button>
    </div>
 
     <script>
@@ -63,14 +63,15 @@ alert(text);
 }
 
 function prompter2(){
-  window.onload=prompt('naam bata');
+  let usrr=prompt('naam bata');
   let store='';
-  if(prompt==null){
-    store='lawda';
+  if(usrr==null||usrr==''){
+    store='input not given';
   }
   else{
-    store='kaisa hai'+prompt+'lundure';
+    store='kaisa hai'+usrr+'bhai';
   }
+  alert(store);
 }
 
     </script>
