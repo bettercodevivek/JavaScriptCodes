@@ -150,3 +150,38 @@ console.log(obj1);
  obj3.house='panvel';
 
  console.log(obj3);
+
+ //lets talk about object methods
+
+ const obj4={
+    firstName:'batman',
+    lastName:'bhati',
+    id:44003,
+    fullName:function(){
+         return this.firstName+" "+this.lastName;
+    }
+ }
+
+ console.log(obj4.fullName());
+
+
+ // lets see some other examples
+
+ const obj5={
+    first:'john',
+    mid:'doe',
+    last:'deere',
+    id:3558,
+    height:1.70,
+    weight:70,
+    full:function(){
+        return this.first+" "+this.mid+" "+this.last;
+    },
+    bmi:function(){
+        return ((this.weight)/(this.height**2));
+    }
+ }
+
+ console.log(obj5);
+ console.log(obj5.full());
+ console.log(obj5.bmi());
