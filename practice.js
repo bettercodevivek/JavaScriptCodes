@@ -191,3 +191,12 @@ console.log(obj1);
 In the example above, this is the person object that "owns" the fullName function.
 
 In other words, this.firstName means the firstName property of this object.*/
+
+/*******************************************STRINGS*********************************/
+let guyname="bruce";
+let text1=`he is ${guyname} wong`;
+console.log(text1);
+console.log(text1.length)
+
+let text2 = "We are the so-called \"Vikings\" from the north.";
+console.log(text2);
