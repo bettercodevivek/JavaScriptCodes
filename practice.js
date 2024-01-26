@@ -196,7 +196,9 @@ In other words, this.firstName means the firstName property of this object.*/
 let guyname="bruce";
 let text1=`he is ${guyname} wong`;
 console.log(text1);
+
 console.log(text1.length)
 
-let text2 = "We are the so-called \"Vikings\" from the north.";
-console.log(text2);
+console.log(text1[4]);
+
+console.log(text1.slice(7,10));
