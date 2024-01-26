@@ -48,6 +48,9 @@
     width:3vw;
     aspect-ratio:1/1;" 
     >O</button></div>
+
+      <button id="color-but" onmousemove="colorchanger()">show date</button>
+
     <script>
       function slider(){
         var name1=document.getElementById('slider');
@@ -57,6 +60,9 @@
         else{
           name1.style.translate='12vw';
         }
+      }
+      function colorchanger(){
+        document.getElementById('color-but').style.background='red';
       }
   function Viewer(){
     let word='i got changed by javascript...yayyyy';

@@ -185,3 +185,9 @@ console.log(obj1);
  console.log(obj5);
  console.log(obj5.full());
  console.log(obj5.bmi());
+
+ /*In a function definition, this refers to the "owner" of the function.
+
+In the example above, this is the person object that "owns" the fullName function.
+
+In other words, this.firstName means the firstName property of this object.*/
