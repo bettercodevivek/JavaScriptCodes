@@ -35,7 +35,29 @@
     <button id="confirm" onclick="confirmer()">click to confirm</button>
    </div>
 
+   <div 
+    style="background-color:gold;
+    width:15vw;
+    height:6vh;
+    margin-top:5vh;
+    border-radius:20px;"
+   class="slider-div"><button onclick="slider()" class="slider" id="slider"
+    style="border-radius:50%;
+    height:6vh;
+    transition-duration:0.35s;
+    width:3vw;
+    aspect-ratio:1/1;" 
+    >O</button></div>
     <script>
+      function slider(){
+        var name1=document.getElementById('slider');
+        if(name1.style.translate=='12vw'){
+          name1.style.translate='0vw';
+        }
+        else{
+          name1.style.translate='12vw';
+        }
+      }
   function Viewer(){
     let word='i got changed by javascript...yayyyy';
     document.getElementById('para1').innerHTML=word;
