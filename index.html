@@ -75,7 +75,15 @@ function writer(){
 }
 
 function listChanger(){
- document.getElementById('list1').innerHTML=list2;
+let tags = ["template strings", "javascript", "es6"];
+
+let html = `<p>${tags}</p><ul>`;
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
+
+html += `</ul>`;
+document.getElementById('list1').innerHTML=html;
 }
 function prompter(){
 let user=prompt('please enter your name');
