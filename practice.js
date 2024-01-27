@@ -236,3 +236,38 @@ console.log(text1.replace('bruce','captain'))
 
 console.log(text2.split(","))
 console.log(text2.split("|"));
+
+//lets see some string search methods
+
+let text6="hello everyone i m learing everyone javascript";
+console.log(text6.indexOf('everyone'));
+//The indexOf() method returns the index (position) of the first occurrence of a string in a string, or it returns -1 if the string is not found:
+console.log(text6.lastIndexOf('everyone'));
+//The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:
+
+let text7 = "The rain in SPAIN stays mainly in the plain";
+console.log(text7.match("ain"));
+//match() tells if a string input is present in given string and gives its starting index
+
+console.log(text7.includes("rain"));
+
+/***********************************************STRING TEMPLATES************************************/
+
+// basically strings enclosed in backticks(` `)
+
+let text8=`hello brother`;
+
+// this can be used for string interpolation, for example
+
+let textName='batman';
+
+console.log(`i wanted to tell you that ${text8 } ${textName}`);
+
+let price = 10;
+let VAT = 0.25;
+
+let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+
+console.log(total);
+
+
