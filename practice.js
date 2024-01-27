@@ -202,3 +202,31 @@ console.log(text1.length)
 console.log(text1[4]);
 
 console.log(text1.slice(7,10));
+
+console.log(text1.slice(7));
+
+console.log(text1.slice(-5));
+
+console.log(text1.substring(4,8));
+
+console.log(text1.toLowerCase());
+
+console.log(text1.toUpperCase());
+
+// lets talk about concat method, used to concatenation of 2 strings
+
+let text2='bhailog';
+let text3='kaise ho';
+
+let text4=text2.concat(" ",text3);
+
+console.log(text4);
+
+console.log(text2+" "+text3);
+
+// so concat function can be used instead of add(+) operator for attaching/concatenating 2 strings
+
+console.log(text1.concat(" ",text2," ",text3));
+
+// important thing to note that concat method can concatenate more than 2 strings also
+

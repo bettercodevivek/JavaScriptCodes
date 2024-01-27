@@ -67,3 +67,15 @@ onmouseover--	The user moves the mouse over an HTML element
 onmouseout--	The user moves the mouse away from an HTML element
 onkeydown--	The user pushes a keyboard key
 onload	--    The browser has finished loading the page
+
+Strings are immutable: Strings cannot be changed, only replaced.
+
+The trim() method removes whitespace from both sides of a string:
+ECMAScript 2019 added the String method trimStart() to JavaScript.
+The trimStart() method works like trim(), but removes whitespace only from the start of a string
+similarly we have trimEnd()
+The repeat() method returns a string with a number of copies of a string.
+
+The repeat() method returns a new string.
+
+The repeat() method does not change the original string.
