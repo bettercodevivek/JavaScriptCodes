@@ -230,3 +230,9 @@ console.log(text1.concat(" ",text2," ",text3));
 
 // important thing to note that concat method can concatenate more than 2 strings also
 
+console.log(text1.replace('bruce','captain'))
+
+// replace() methods helps to replace particular text in a string
+
+console.log(text2.split(","))
+console.log(text2.split("|"));
