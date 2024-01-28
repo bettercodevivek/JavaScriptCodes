@@ -392,4 +392,27 @@ console.log(all1);
 
 // ... these 3 dots are basically spread operator and they are preferred over push and concat
 
+const n1=[2,4,6,8,10]
+console.log("A",n1)
+
+const myn1=n1.slice(1,3)
+console.log(myn1)
+console.log("B",n1)
+
+const myn2=n1.splice(1,3)
+console.log(myn2)
+console.log("C",n1)
+
+/* So, basically we can see that there are two differences in the slice and splice function
+DIFFERENCE 1 =>  In Slice final index value is not counted whereas in Splice final index value is also counted.
+DIFFERENCE 2 => In slice the original array is not changed after performing slice as copy of original array is used
+whereas in Splice original array is changed after performing the function.
+The splice() method adds new items to an array.
+The slice() method slices out a piece of an array.
+*/
+fruits.splice(2, 2, "Lemon", "Kiwi");
+console.log(fruits);
+/*The first parameter (2) defines the position where new elements should be added (spliced in).
+The second parameter (0) defines how many elements should be removed.
+The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added. */
 
