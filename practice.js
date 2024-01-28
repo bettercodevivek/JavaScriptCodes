@@ -326,3 +326,70 @@ console.log(arr3);
 const fruits = ["Banana", "Orange", "Apple"];
 fruits.push("Lemon");  // Adds a new element (Lemon) to fruits
 console.log(fruits);
+
+//looping through an array
+console.log(fruits.length);
+let Flen=fruits.length;
+for(let i=0;i<=Flen;i++){
+    console.log(fruits[i]);
+}
+
+//In JavaScript, arrays use numbered indexes.  
+//In JavaScript, objects use named indexes.
+
+console.log(typeof fruits);
+
+console.log(Array.isArray(fruits));
+
+// as we can see the type of array is given object, thus to check if it is an array or not we can use
+//Array.isArray() method
+
+/**************************************************ARRAY METHODS*******************************************************/
+
+const arrName1=['red','yellow','green','blue','violet','pink'];
+
+console.log(arrName1.length);
+
+console.log(arrName1.toString());
+
+console.log(arrName1.at(2));
+
+console.log(arrName1.join('$'));
+// same as toString(), just can give separator for array items in it
+arrName1.pop();
+console.log(arrName1);
+
+arrName1.shift();
+console.log(arrName1);
+
+// shift does the same thing as pop, only difference is that shift removes starting element.
+// unshift does same work as push, but new element is pushed in starting.
+arrName1.unshift('mausami');
+console.log(arrName1);
+
+const arrName2=['aloo','pyaaz','gobhi'];
+const arrName3=arrName1.concat(arrName2);
+console.log(arrName3);
+
+arrName2.copyWithin(0,1);
+console.log(arrName2);
+// copyWithin() basically interchanges the values at input indices within an array.
+
+const myArr = [[1,2],[[3,4]],[5,6]];
+const newArr = myArr.flat(Infinity);
+console.log(newArr);
+
+const marvel=['spider','iron','thor'];
+
+const dc=['super','aqua','wonder'];
+
+const all=marvel.concat(dc);
+
+console.log(all);
+
+const all1=[...marvel,...dc];
+console.log(all1);
+
+// ... these 3 dots are basically spread operator and they are preferred over push and concat
+
+
