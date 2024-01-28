@@ -81,3 +81,12 @@ The repeat() method returns a new string.
 The repeat() method does not change the original string.
 
 Automatic replacing of expressions with real values is called string interpolation.
+
+These number methods can be used on all JavaScript numbers:
+
+Method	         Description
+toString()	     Returns a number as a string
+toExponential()	 Returns a number written in exponential notation
+toFixed()	     Returns a number written with a number of decimals
+toPrecision()	 Returns a number written with a specified length
+ValueOf()	     Returns a number as a number

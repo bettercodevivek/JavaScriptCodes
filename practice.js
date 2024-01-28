@@ -270,4 +270,22 @@ let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
 
 console.log(total);
 
+//To create a BigInt, append n to the end of an integer or call BigInt():
+
+let numericVal=BigInt("12345678912345678124353453");
+console.log(numericVal);
+console.log(typeof numericVal);
+
+//JavaScript BigInt variables are used to store big integer values that are too big to be represented by a normal JavaScript Number.
+
+//A BigInt can not have decimals.
+
+let max1=Number.MAX_SAFE_INTEGER;
+let min1=Number.MIN_SAFE_INTEGER;
+console.log({max1,min1});
+
+// isInteger() ans isSafeinteger() can be used to check number
+console.log(Number.isInteger(12));
+
+console.log(Number.isSafeInteger(12345678901234567812345));
 
