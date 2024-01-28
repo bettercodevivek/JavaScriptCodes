@@ -299,3 +299,30 @@ console.log(exampNum.toExponential());
 console.log(exampNum.toFixed());
 console.log(exampNum.valueOf());
 
+console.log(Date());
+
+/*******************************************ARRAYS*******************************************/
+
+const arr1 =[2,4,6,8,12];
+console.log(arr1);
+
+const arr2=[];
+arr2[0]='volvo';
+arr2[1]='swift';
+arr2[2]='toyota';
+console.log(arr2);
+
+const arr3=new Array();
+arr3[0]=4;
+arr3[1]=6;
+arr3[2]=8;
+arr3[3]=14;
+console.log(arr3);
+
+//There is no need to use new Array().
+//For simplicity, readability and execution speed, use the array literal method.
+//The easiest way to add a new element to an array is using the push() method:
+
+const fruits = ["Banana", "Orange", "Apple"];
+fruits.push("Lemon");  // Adds a new element (Lemon) to fruits
+console.log(fruits);

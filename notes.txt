@@ -90,3 +90,19 @@ toExponential()	 Returns a number written in exponential notation
 toFixed()	     Returns a number written with a number of decimals
 toPrecision()	 Returns a number written with a specified length
 ValueOf()	     Returns a number as a number
+
+The Date() method returns the number of milliseconds since 1.1.1970.
+
+parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:
+
+parseFloat() parses a string and returns a number. Spaces are allowed. Only the first number is returned:
+
+Property	     Description
+EPSILON	            The difference between 1 and the smallest number > 1.
+MAX_VALUE	        The largest number possible in JavaScript
+MIN_VALUE	        The smallest number possible in JavaScript
+MAX_SAFE_INTEGER	The maximum safe integer (253 - 1)
+MIN_SAFE_INTEGER	The minimum safe integer -(253 - 1)
+POSITIVE_INFINITY	Infinity (returned on overflow)
+NEGATIVE_INFINITY	Negative infinity (returned on overflow)
+NaN	                A "Not-a-Number" value
