@@ -289,3 +289,13 @@ console.log(Number.isInteger(12));
 
 console.log(Number.isSafeInteger(12345678901234567812345));
 
+
+// FOLLOWING ARE THE NUMBER METHODS IN JAVASCRIPT
+
+let exampNum=12345.8765;
+console.log(exampNum.toString());
+console.log(exampNum.toPrecision());
+console.log(exampNum.toExponential());
+console.log(exampNum.toFixed());
+console.log(exampNum.valueOf());
+
