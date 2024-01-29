@@ -111,3 +111,9 @@ Many languages allows negative bracket indexing like [-1] to access elements fro
 This is not possible in JavaScript, because [] is used for accessing both arrays and objects. obj[-1] refers to the value of key -1,
 not to the last property of the object.
 The at() method was introduced in ES2022 to solve this problem.
+
+The map() method creates a new array by performing a function on each array element.
+
+The map() method does not execute the function for array elements without values.
+
+The map() method does not change the original array.
