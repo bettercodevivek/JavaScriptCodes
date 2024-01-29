@@ -416,3 +416,14 @@ console.log(fruits);
 The second parameter (0) defines how many elements should be removed.
 The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added. */
 
+/******************************************ARRAY ITERATION METHODS*********************************************/
+
+//The forEach() method calls a function (a callback function) once for each array element.
+
+const arr4=['walt','jesse','saul','hank','skyler'];
+let greet='hello';
+function fn1(value){
+ greet=greet+value;
+}
+
+console.log(arr4.forEach(fn1(arr4[0])));
