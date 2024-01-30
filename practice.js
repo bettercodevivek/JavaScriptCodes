@@ -428,3 +428,20 @@ function func1(value,index,array){
     console.log(`hello! its been a long time ${value}`);
 }
 
+// so basically in the case of forEach() iteration, function is called for each element of array.
+
+//The map() method creates a new array by performing a function on each array element.
+
+const arr5=[25,35,45,55,65,75];
+const arr6=arr5.map(func2);
+function func2(value,index,array){
+    return value*10
+}
+console.log(arr6);
+
+// forEach mein basically kya ho rha tha ki har element pe kuch function lg rha tha, similar in case of map() bas yaha pe new array bn jaata
+// hai for storing what map iteration does
+
+const arr7=arr5.map((value)=>value*10);
+console.log(arr7);
+//same thing used achieved map() but using arrow function.
