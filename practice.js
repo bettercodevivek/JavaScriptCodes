@@ -533,3 +533,14 @@ console.log(`date from 1st date object is${d1} and from 2nd is ${d2}`);
 const d3=new Date(2023,8);
 const d4=new Date(100000000000);
 console.log(d4.toUTCString());
+
+//If you have a valid date string, you can use the Date.parse() method to convert it to milliseconds.
+//Date.parse() returns the number of milliseconds between the date and January 1, 1970:
+
+console.log(Date.parse(d3));
+
+console.log(d2.getFullYear());
+console.log(d2.getHours());
+console.log(d2.getDay());
+console.log(d2.getMonth());
+console.log(d2.getTimezoneOffset());
