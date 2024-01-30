@@ -444,4 +444,72 @@ console.log(arr6);
 
 const arr7=arr5.map((value)=>value*10);
 console.log(arr7);
-//same thing used achieved map() but using arrow function.
+//same thing achieved using map() iteration method but using arrow function.
+
+const arr8=arr5.flatMap((value)=>value*8);
+console.log(arr8);
+//The flatMap() method first maps all elements of an array and then creates a new array by flattening the array.
+
+const arr9=arr5.filter(func3);
+
+function func3(value,index,array){
+     return value>=45;
+}
+
+console.log(arr9);
+
+//The filter() method creates a new array with array elements that pass a test.
+
+let sum=arr5.reduce(func4);
+
+function func4(total,value,index,array){
+    return total+value;
+}
+console.log(sum);
+/*
+The reduce() method runs a function on each array element to produce (reduce it to) a single value.
+
+The reduce() method works from left-to-right in the array. See also reduceRight().
+
+The reduce() method does not reduce the original array.
+*/
+
+const arr10=arr5.every((value)=>value>=25);
+console.log(arr10);
+
+//The every() method checks if all array values pass a test.
+
+let str1='elliot';
+console.log(Array.from(str1));
+
+// Array.from() method can be used to create an array from any given input
+
+let n=456789;
+console.log(Array.from(n));
+
+/*Array.from() lets you create Arrays from:
+iterable objects (objects such as Map and Set); or, if the object is not iterable,
+array-like objects (objects with a length property and indexed elements).*/
+
+/*The keys() method of Array instances returns a new array iterator object that contains the keys for each index in the array. */
+
+const iterator=fruits.keys();
+
+for(let key of iterator){
+    console.log(key);
+}
+
+const entries=fruits.entries();
+for(let entry of entries){
+    console.log(entry);
+}
+
+// The entries() method of Array instances returns a new array iterator object that contains the key/value pairs for each index in the array.
+// basically does the same thing as keys(), only difference it return key-value pair instead of just key
+
+const months=['january','february','march','apr','may','jun','july'];
+const newMonth=months.with(3,'april');
+console.log(newMonth);
+
+//ES2023 added the Array with() method as a safe way to update elements in an array without altering the original array.
+
