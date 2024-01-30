@@ -513,3 +513,23 @@ console.log(newMonth);
 
 //ES2023 added the Array with() method as a safe way to update elements in an array without altering the original array.
 
+//The ... operator expands an iterable (like an array) into more elements:it is called spread operator
+
+const q1 = ["Jan", "Feb", "Mar"];
+const q2 = ["Apr", "May", "Jun"];
+const q3 = ["Jul", "Aug", "Sep"];
+const q4 = ["Oct", "Nov", "May"];
+
+const year = [...q1, ...q2, ...q3, ...q4];
+console.log(year);
+
+/**************************************************************** DATE OBJECTS***********************************************************/
+
+const d1=new Date();
+const d2=new Date("december 25,2016 11:45:00");
+
+console.log(`date from 1st date object is${d1} and from 2nd is ${d2}`);
+
+const d3=new Date(2023,8);
+const d4=new Date(100000000000);
+console.log(d4.toUTCString());

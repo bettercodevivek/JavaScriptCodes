@@ -117,3 +117,20 @@ The map() method creates a new array by performing a function on each array elem
 The map() method does not execute the function for array elements without values.
 
 The map() method does not change the original array.
+
+There are 9 ways to create a new date object:
+
+new Date()
+new Date(date string)
+
+new Date(year,month)
+new Date(year,month,day)
+new Date(year,month,day,hours)
+new Date(year,month,day,hours,minutes)
+new Date(year,month,day,hours,minutes,seconds)
+new Date(year,month,day,hours,minutes,seconds,ms)
+
+new Date(milliseconds)
+
+JavaScript stores dates as number of milliseconds since January 01, 1970.
+Zero time is January 01, 1970 00:00:00 UTC.
