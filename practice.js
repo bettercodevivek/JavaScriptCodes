@@ -566,3 +566,5 @@ Math.LOG10E   // returns base 10 logarithm of E
  */
 
 console.log('its working boss')
+
+console.log(Math.PI);
