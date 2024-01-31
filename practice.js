@@ -564,3 +564,5 @@ Math.LN10     // returns the natural logarithm of 10
 Math.LOG2E    // returns base 2 logarithm of E
 Math.LOG10E   // returns base 10 logarithm of E
  */
+
+console.log('its working boss')
