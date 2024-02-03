@@ -669,24 +669,42 @@ do{
     m1++;
 }
 while(m1<=10);
+// A JavaScript Set is a collection of unique values.
+//Each value can only occur once in a Set.
 
-// in do-while, the updation and execution both in the do section only.
+/*
+Method	           Description
+new Set()	       Creates a new Set
+add()	           Adds a new element to the Set
+delete()	       Removes an element from a Set
+has()	           Returns true if a value exists in the Set
+forEach()	       Invokes a callback for each element in the Set
+values()           Returns an iterator with all the values in a Set
 
-let inp=window.prompt('enter your value');
+Property	       Description
+size	           Returns the number of elements in a Set
+*/
 
-switch(inp){
-    case 1:console.log('case 1 executed');
-    break;
+// creating a set from array
 
-    case 2:console.log('case 2 executed');
-    break;
+const setarr= new Set(['ramesh','mahesh','mukesh']);
+console.log(setarr);
 
-    case 3:console.log('case 3 executed');
-    break;
+const setarr1=new Set();
 
-    case 4:console.log('case 4 executed');
-    break;
+setarr1.add('hello');
+setarr1.add('bye');
+setarr1.add('good');
 
-    case 5:console.log('case 5 executed');
-    break;
+console.log(setarr1);
+console.log(setarr.size);
+setarr.delete('mahesh');
+console.log(setarr);
+
+const setarr2=new Set([24,44,56,78,98]);
+
+const iter=setarr2.values();
+
+for(let i11=1;i11<setarr2.length;i11++){
+    console.log('')
 }
