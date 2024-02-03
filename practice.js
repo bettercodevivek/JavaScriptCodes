@@ -568,3 +568,25 @@ Math.LOG10E   // returns base 10 logarithm of E
 console.log('its working boss')
 
 console.log(Math.PI);
+
+/*********************************IF AND ELSE**************************************/
+
+//Use the if statement to specify a block of JavaScript code to be executed if a condition is true.
+
+if(25==30){
+    console.log('aapka knowledge toh kamaal ka hai bhai');
+}
+else 
+    console.log('bazingaaaa!!!')
+
+let num11=35;
+let num12=70;
+if(num11*2>num12){
+      console.log('yes boss!!')
+    }
+    else if(num11*2<num12){
+        console.log('no bosss!!')
+    }
+    else{
+       console.log('they are equal boss!!');
+    }
