@@ -618,4 +618,34 @@ for(let i=0;i<=10;i++){
 // we can clearly see that using var can help redeclare the variable inside the loop but when it
 // comes to let it does not allow redeclaration in loop and gives an error
 
+const obj7={
+    name7:'john',
+    age:25,
+    father:'billy'
+}
+
+for(let x in obj7){
+    console.log(`how are you ${obj7[x]}`);
+}
+
+// this is how for in loops works
+
+const cars=['volvo','thar','scorpio'];
+
+for(let element1 of cars){
+    console.log(element1);
+}
+
+// this is how for of loop works
+
+for(let element2 in cars){
+    console.log(element2);
+}
+
+for(let element3 of cars){
+    console.log(element3);
+}
+
+// the above example clearly gives the difference between for in loop and for of loop, as we can see in for in.....
+// to access the element u have to use this syntax object_name[variable], but in for of to access element u just need variable_name
 
