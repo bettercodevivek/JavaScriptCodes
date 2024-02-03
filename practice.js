@@ -701,10 +701,28 @@ console.log(setarr.size);
 setarr.delete('mahesh');
 console.log(setarr);
 
-const setarr2=new Set([24,44,56,78,98]);
+ const setarr2=  new Set([24,44,56,89,76,55]);
+ const iter=setarr2.values();
 
-const iter=setarr2.values();
+ for(let n2 of iter){
+    console.log(n2);
+ }
 
-for(let i11=1;i11<setarr2.length;i11++){
-    console.log('')
-}
+ // let talk about javascript maps
+
+ const map1=new Map(
+    [
+        ['apples',200],
+        ['bananas',300],
+        ['guavas',400]
+    ]
+ );
+
+ console.log(map1);
+
+ const map2=new Map();
+
+ map2.set('apples',200);
+ map2.set('bananas',400);
+ map2.set('grapes',600);
+ console.log(map2);
