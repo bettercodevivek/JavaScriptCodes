@@ -51,6 +51,8 @@
 
       <button id="color-but" onmousemove="colorchanger()">show date</button>
 <button id="test-but" onclick="tester()">click to test</button>
+
+<button id="switch" onclick="switcher()">click for input </button>
     <script>
       function slider(){
         var name1=document.getElementById('slider');
@@ -122,6 +124,28 @@ function tester(){
   for(let i=0;i<=5;i++){
     console.log('it works')
   }
+}
+
+function switcher(){
+
+  let inp=1;
+
+switch(inp){
+    case 1: console.log('case 1 executed');
+    break;
+
+    case 2: console.log('case 2 executed');
+    break;
+
+    case 3: console.log('case 3 executed');
+    break;
+
+    case 4: console.log('case 4 executed');
+    break;
+
+    case 5: console.log('case 5 executed');
+    break;
+}
 }
     </script>
 </body>

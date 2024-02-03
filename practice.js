@@ -649,3 +649,44 @@ for(let element3 of cars){
 // the above example clearly gives the difference between for in loop and for of loop, as we can see in for in.....
 // to access the element u have to use this syntax object_name[variable], but in for of to access element u just need variable_name
 
+let m=1;
+while(m<10){
+    console.log('while loop works')
+    m++;
+}
+
+const loop_arr=[1,2,3,4,5,6,7,8,9,10];
+let i1=0;
+while(i1<loop_arr.length){
+    console.log(loop_arr[i1]);
+    i1++;
+}
+
+// This is how a while loop functions
+let m1=1;
+do{
+    console.log('hello!');
+    m1++;
+}
+while(m1<=10);
+
+// in do-while, the updation and execution both in the do section only.
+
+let inp=window.prompt('enter your value');
+
+switch(inp){
+    case 1:console.log('case 1 executed');
+    break;
+
+    case 2:console.log('case 2 executed');
+    break;
+
+    case 3:console.log('case 3 executed');
+    break;
+
+    case 4:console.log('case 4 executed');
+    break;
+
+    case 5:console.log('case 5 executed');
+    break;
+}
