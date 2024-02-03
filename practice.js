@@ -604,3 +604,16 @@ do/while - also loops through a block of code while a specified condition is tru
 for(let i=1;i<=10;i++){
     console.log('this loop works!')
 }
+
+var i=5;
+for(var i=0;i<=10;i++){
+    console.log('var redeclares the variables');
+}
+
+/*let i=5;
+for(let i=0;i<=10;i++){
+    console.log('let does not redeclare variables');
+}*/
+
+// we can clearly see that using var can help redeclare the variable inside the loop but when it
+// comes to let it does not allow redeclaration in loop and gives an error
