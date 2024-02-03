@@ -617,3 +617,5 @@ for(let i=0;i<=10;i++){
 
 // we can clearly see that using var can help redeclare the variable inside the loop but when it
 // comes to let it does not allow redeclaration in loop and gives an error
+
+
