@@ -726,3 +726,5 @@ console.log(setarr);
  map2.set('bananas',400);
  map2.set('grapes',600);
  console.log(map2);
+
+ console.log(map2.get)
