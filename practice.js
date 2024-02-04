@@ -783,3 +783,12 @@ Variables defined inside a function are not accessible (visible) from outside th
 Variables declared with var, let and const are quite similar when declared inside a function.
 
 They all have Function Scope:*/
+
+const obj8={
+    name8:'james',
+    last8:'mendel',
+    full8:function(){
+        return this.name8 + " " + this.last8;
+    }
+}
+ console.log(obj8.full8());
