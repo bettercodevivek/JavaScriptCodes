@@ -728,3 +728,24 @@ console.log(setarr);
  console.log(map2);
 
  console.log(map2.get)
+
+const typearr=['john',3.14, NaN,false,[1,2,3,4],{naam:'johnny',kaam:'mason'},new Date()];
+
+for(let m of typearr){
+    console.log(typeof m);
+}
+
+/*Please observe:
+The data type of NaN is number
+The data type of an array is object
+The data type of a date is object
+The data type of null is object
+The data type of an undefined variable is undefined *
+The data type of a variable that has not been assigned a value is also undefined */
+
+// JAVASCRIPT TYPE CONVERSIONS
+
+console.log(Number('hello'));
+console.log(String(12345.45677));
+console.log(Boolean(5));
+
