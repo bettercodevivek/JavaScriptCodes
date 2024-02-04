@@ -749,3 +749,37 @@ console.log(Number('hello'));
 console.log(String(12345.45677));
 console.log(Boolean(5));
 
+/***************************JS SCOPE************************/
+
+/*Scope determines the accessibility (visibility) of variables.
+JavaScript variables have 3 types of scope:
+Block scope
+Function scope
+Global scope */
+
+//BLOCK SCOPE
+//Variables declared inside a { } block cannot be accessed from outside the block:
+
+{
+    let a1=25;
+    //console.log(a1);
+}
+//console.log(a1);
+// we can see from the above example that a variable declared with let has a block scope and is not accessible outside the block.
+// but same doesn't apply for var keyword,variable declared using var can be accessed outside the block.
+
+//Variables declared within a JavaScript function, are LOCAL to the function:
+
+function func6(){
+    let my_vari=35;
+    return my_vari*2;
+}
+console.log(func6());
+
+/*JavaScript has function scope: Each function creates a new scope.
+
+Variables defined inside a function are not accessible (visible) from outside the function.
+
+Variables declared with var, let and const are quite similar when declared inside a function.
+
+They all have Function Scope:*/
