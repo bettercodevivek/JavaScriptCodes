@@ -792,3 +792,6 @@ const obj8={
     }
 }
  console.log(obj8.full8());
+ 
+ let namenm='neo'
+ console.log(`hello i m trying to learn javascript ${namenm}`);
