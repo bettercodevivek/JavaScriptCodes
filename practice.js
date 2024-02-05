@@ -797,3 +797,5 @@ const obj8={
  console.log(`hello i m trying to learn javascript ${namenm}`);
 
  console.log(String(Math.PI));
+
+ console.log(Number('344.4368'));
