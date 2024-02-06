@@ -806,3 +806,7 @@ const obj8={
  else {
     console.log('bye');
  }
+
+ for(let a11=0;a11<10;a11++){
+    console.log(obj1.name);
+ }
