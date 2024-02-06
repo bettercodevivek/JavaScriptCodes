@@ -799,3 +799,10 @@ const obj8={
  console.log(String(Math.PI));
 
  console.log(Number('344.4368'));
+
+ if(1==1){
+    console.log('hello');
+ }
+ else {
+    console.log('bye');
+ }
