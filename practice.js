@@ -810,3 +810,10 @@ const obj8={
  for(let a11=0;a11<10;a11++){
     console.log(obj1.name);
  }
+
+ console.log('this is an updation');
+
+ const subs=['math','eng','hindi','history'];
+ for(let val11 of subs){
+    console.log(val11);
+ }
