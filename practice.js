@@ -817,3 +817,8 @@ const obj8={
  for(let val11 of subs){
     console.log(val11);
  }
+
+ const nums1=[11,22,33,44,55,66,77,88];
+ for(let val12 of nums1){
+    console.log(val12*2);
+ }
