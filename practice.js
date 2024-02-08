@@ -822,3 +822,12 @@ const obj8={
  for(let val12 of nums1){
     console.log(val12*2);
  }
+
+ const objj1={
+    os:'android',
+    version:14,
+    date1:function(){
+      return Date();
+    }
+ }
+ console.log(objj1.date1());
