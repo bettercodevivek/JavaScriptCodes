@@ -831,3 +831,5 @@ const obj8={
     }
  }
  console.log(objj1.date1());
+
+ console.log('hello')
