@@ -1,3 +1,5 @@
+"use strict";
+
 // This is how you declare a variable automatically without using a keyword
 vivek=4;
 console.log(vivek);
@@ -826,4 +828,6 @@ const car3;
 console.log(car3);*/
 
 // thus we can clearly see that in javascript let and const keyword defined variables are not hoisted.
+
+//"use strict"; Defines that JavaScript code should be executed in "strict mode".
 
