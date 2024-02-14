@@ -811,25 +811,19 @@ const obj8={
     console.log(obj1.name);
  }
 
- console.log('this is an updation');
+//hoisting examples
 
- const subs=['math','eng','hindi','history'];
- for(let val11 of subs){
-    console.log(val11);
- }
+/*car1='baleno';
+let car1;
+console.log(car1);*/
 
- const nums1=[11,22,33,44,55,66,77,88];
- for(let val12 of nums1){
-    console.log(val12*2);
- }
+car2='endevour';
+var car2;
+console.log(car2);
 
- const objj1={
-    os:'android',
-    version:14,
-    date1:function(){
-      return Date();
-    }
- }
- console.log(objj1.date1());
+/*car3='creta';
+const car3;
+console.log(car3);*/
 
- console.log('hello')
+// thus we can clearly see that in javascript let and const keyword defined variables are not hoisted.
+
