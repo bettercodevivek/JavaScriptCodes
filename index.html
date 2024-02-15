@@ -54,9 +54,18 @@
 
 <button id="switch" onclick="switcher()">click for input </button>
 
-<img id="img-1" src=" ">
+<img id="img-1" src="Screenshot (19).png">
 <button id="image-changer" onclick="imagechanger()">click to change image</button>
+
+<div>
+  <a id="link-1" href="https://www.w3schools.com/js/js_htmldom_html.asp">W3Schools</a>
+  <button id="link-changer" onclick="linkchanger()">click to change above link</button>
+</div>
     <script>
+      const linkchanger= ()=>{
+        document.getElementById('link-1').href='https://openai.com/chatgpt';
+        document.getElementById('link-1').innerHTML='openAI';
+      }
       function slider(){
         var name1=document.getElementById('slider');
         if(name1.style.translate=='12vw'){
@@ -77,6 +86,10 @@
 
 function writer(){
   document.write('Lets try and erase everything')
+}
+
+function imagechanger(){
+  document.getElementById('img-1').src='Screenshot (21).png';
 }
 
 function listChanger(){
