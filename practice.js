@@ -860,3 +860,35 @@ console.log(this);
 
 // within the object, this keyword refers to the context of that object only but outside in global scope
 // this keyword refers to an empty object {} whereas in browser console it refers to window object.
+
+// const chai=function(){
+//     let usrname='john';
+//     console.log(this.usrname);
+// }
+
+// chai();
+//thus, to make an arrow function simply remove the function keyword and add arrow after parentheses.
+// const chai2 = () => {
+//     let usrname='john';
+//     console.log(this.usrname);
+// }
+
+// chai2();
+
+// this a basic arrow function
+const addTwo = (num1,num2)=>{
+    return num1+num2;
+}
+
+console.log(addTwo(5,6));
+
+//and this can be written like this also,
+
+const addThree=(num1,num2,num3)=> num1+num2+num3;
+
+console.log(addThree(6,7,8));
+
+// this is called implicit arrow function
+
+
+
