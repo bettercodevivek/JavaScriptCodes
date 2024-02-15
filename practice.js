@@ -889,6 +889,8 @@ const addThree=(num1,num2,num3)=> num1+num2+num3;
 console.log(addThree(6,7,8));
 
 // this is called implicit arrow function
+// if you have curly braces, return keyword is required to return the output of function but in case of implicit, no brace or parentheses
+// can be used where return keyword is not required to give the output of the function.
 
 
 
