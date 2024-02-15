@@ -1,8 +1,8 @@
 "use strict";
 
 // This is how you declare a variable automatically without using a keyword
-vivek=4;
-console.log(vivek);
+/*vivek=4;
+console.log(vivek);*/
 
 //now,lets use var to declare variables
 var x=5;
@@ -840,3 +840,23 @@ As an example, in normal JavaScript, mistyping a variable name creates a new glo
 In normal JavaScript, a developer will not receive any error feedback assigning values to non-writable properties.
 
 In strict mode, any assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object, will throw an error.*/
+
+const objj1={
+    usernm:'dopinder',
+    price:999,
+    welcome:function(){
+        console.log(`welcome to website,${this.usernm}`)
+        console.log(this);
+    }
+}
+
+objj1.welcome();
+
+objj1.usernm='kael al';
+
+objj1.welcome();
+
+console.log(this);
+
+// within the object, this keyword refers to the context of that object only but outside in global scope
+// this keyword refers to an empty object {} whereas in browser console it refers to window object.
