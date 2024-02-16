@@ -24,3 +24,21 @@
     margin-top:5vh;
     margin-left:4vw;
 }
+
+.animate-div{
+    height:50vh;
+    width:50vw;
+    aspect-ratio:1/1;
+    background:blue;
+    margin-top:10vh;
+    position:relative;
+}
+
+.animate{
+    background:gold;
+    position:absolute;
+    height:4vh;
+    width:2vw;
+    aspect-ratio:1/1;
+    border-radius:50%;
+}
