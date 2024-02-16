@@ -61,7 +61,31 @@
   <a id="link-1" href="https://www.w3schools.com/js/js_htmldom_html.asp">W3Schools</a>
   <button id="link-changer" onclick="linkchanger()">click to change above link</button>
 </div>
+    
+
+<form name="form-1" class="form-1" id="form-1">
+  <label class="first-name">first name</label>
+  <input type="text" name="first-name" id="first-name">
+  <label class="first-name">last name</label>
+  <input type="text" name="last-name" id="last-name">
+  <label class="first-name">birth year</label>
+  <input type="text" name="birth-year" id="birth-year">
+  <label class="first-name">Age</label>
+  <input type="text" name="age" id="age">
+  <label class="first-name">username</label>
+  <input type="text" name="username" id="username">
+
+</form> 
+    
     <script>
+
+      const validate= ()=>{
+        let x=document.forms['form-1']['fname'].value;
+        if(x==''){
+          alert('not a valid input. please try again.');
+          return false;
+        }
+      }
       const linkchanger= ()=>{
         document.getElementById('link-1').href='https://openai.com/chatgpt';
         document.getElementById('link-1').innerHTML='openAI';

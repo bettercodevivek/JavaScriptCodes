@@ -1,4 +1,17 @@
-.display-screen{
-    height:100px;
-    width:100px;
+.form-1{
+    width:fit-content;
+    background:palegreen;
+    height:fit-content;
+    margin-top:10vh;
+    position:relative;
+    left:40vw;
+}
+
+#first-name,#last-name,#username,#age,#birth-year{
+    display:block;
+    padding-top:1vh;
+    padding-bottom:1vh;
+    padding-left:5vw;
+    padding-right:5vw;
+    border-radius:20px;
 }
