@@ -15,3 +15,12 @@
     padding-right:5vw;
     border-radius:20px;
 }
+
+.submit{
+    padding-top:1vh;
+    padding-bottom:1vh;
+    padding-left:6vw;
+    padding-right:6vw;
+    margin-top:5vh;
+    margin-left:4vw;
+}

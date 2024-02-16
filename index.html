@@ -63,29 +63,37 @@
 </div>
     
 
-<form name="form-1" class="form-1" id="form-1">
+<form name="form-1" class="form-1" id="form-1" onsubmit="validate()">
   <label class="first-name">first name</label>
-  <input type="text" name="first-name" id="first-name">
+  <input type="text" name="first-name" id="first-name" required>
   <label class="first-name">last name</label>
-  <input type="text" name="last-name" id="last-name">
+  <input type="text" name="last-name" id="last-name" required>
   <label class="first-name">birth year</label>
   <input type="text" name="birth-year" id="birth-year">
   <label class="first-name">Age</label>
   <input type="text" name="age" id="age">
   <label class="first-name">username</label>
-  <input type="text" name="username" id="username">
+  <input type="text" name="username" id="username" required>
+  <input type="submit" name="submit" class="submit">
 
 </form> 
     
     <script>
-
-      const validate= ()=>{
-        let x=document.forms['form-1']['fname'].value;
-        if(x==''){
-          alert('not a valid input. please try again.');
-          return false;
-        }
-      }
+     
+     const validate=()=>{
+      let age=document.forms['form-1']['age'].value;
+      let byear=document.forms['form-1']['birth-year'].value;
+ 
+       if(age<0 || age>99){
+        alert('enter the correct input age');
+       }
+       
+       if(byear<1900 || byear>2023){
+        alert('enter the correct input birth year');
+       }
+      
+     }
+      
       const linkchanger= ()=>{
         document.getElementById('link-1').href='https://openai.com/chatgpt';
         document.getElementById('link-1').innerHTML='openAI';
