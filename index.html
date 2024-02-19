@@ -93,8 +93,19 @@
     
 <div id="test-div">
 </div>
+
 <button id="tester">click for callback test</button>
+
+<div id="test-div2">
+</div>
     <script>
+
+      setInterval(dateshower,1000);
+
+      function dateshower(){
+        let d1=new Date();
+        document.getElementById('test-div2').innerHTML=d1.getHours()+':'+d1.getMinutes()+':'+d1.getSeconds()+':'+d1.getMilliseconds();
+      }
       
       // setInterval(function(){
       // alert('hello bro!!!');

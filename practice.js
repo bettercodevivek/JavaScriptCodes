@@ -891,6 +891,13 @@ console.log(addThree(6,7,8));
 // this is called implicit arrow function
 // if you have curly braces, return keyword is required to return the output of function but in case of implicit, no brace or parentheses
 // can be used where return keyword is not required to give the output of the function.
+function printer(){
+    console.log(2);
+}
 
+console.log('1');
+setTimeout(printer,0);
+console.log('3');
 
+// thus we can clearly see that, even if 0 is the time give to setTimeout, 3 get printed in console before 2 as it is an async function.
 
