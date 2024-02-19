@@ -203,3 +203,14 @@ The properties of all HTML elements
 The methods to access all HTML elements
 The events for all HTML elements
 In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+
+A callback is a function passed as an argument to another function
+This technique allows a function to call another function
+A callback function can run after another function has finished
+
+when you give function as a argument in another function dont use parentheses, jsut the function name
+
+Where callbacks really shine are in asynchronous functions, where one function has to wait for another function (like waiting for a file to load).
+
+In the real world, callbacks are most often used with asynchronous functions.
+A typical example is JavaScript setTimeout().

@@ -91,9 +91,33 @@
   </datalist>
 </form>
     
-
+<div id="test-div">
+</div>
+<button id="tester">click for callback test</button>
     <script>
+      
+      // setInterval(function(){
+      // alert('hello bro!!!');
+      // },3000);
+    const testbut=document.querySelector('#tester');
+    testbut.addEventListener('click',function(e){
+      function displayer(value){
+        document.getElementById('test-div').innerHTML=value;
+      }
+      function calci(num1,num2,callback){
+        let sum=num1+num2;
+        callback(sum);
+      }
 
+      calci(10,25,displayer);
+    });
+    
+   testbut.addEventListener('click',function(event){
+setTimeout(func2,3000);
+function func2(){
+  document.getElementById('test-div').innerHTML='hello bro!';
+}
+   });
      
      const validate=()=>{
       let age=document.forms['form-1']['age'].value;
