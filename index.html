@@ -113,9 +113,9 @@
     });
     
    testbut.addEventListener('click',function(event){
-setTimeout(func2,3000);
-function func2(){
-  document.getElementById('test-div').innerHTML='hello bro!';
+setTimeout(function(){func2('i love you');},3000);
+function func2(value){
+  document.getElementById('test-div').innerHTML=value;
 }
    });
      
