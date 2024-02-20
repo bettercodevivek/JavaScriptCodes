@@ -988,15 +988,76 @@ async function consumepromise5(){
 consumepromise5();
 
 
-async function getUser(){
-  try {
-    const resp=await fetch('https://api.github.com/users/bettercodevivek');
+// async function getUser(){
+//   try {
+//     const resp=await fetch('https://api.github.com/users/bettercodevivek');
 
-  const data= await resp.json();
-  console.log(data);
-  } catch (error) {
-    console.log("E:",error);
-  }
-}
+//   const data= await resp.json();
+//   console.log(data);
+//   } catch (error) {
+//     console.log("E:",error);
+//   }
+// }
 
-getUser();
+//getUser();
+
+
+const promise6=new Promise(function(resolve,reject){
+    setTimeout(function(){
+         let err=false;
+
+         if(!err){
+            resolve({name1:'homelander',name2:'butcher'});
+         }
+         else{
+            reject('ERROR BRO ERRRORRRRR!!!');
+         }
+    },5000);
+});
+
+// promise6.then((user)=>{
+//     console.log(user);
+//     return user.name2;
+// }).then((name2)=>{
+//     console.log(name2);
+// }).catch((err)=>{
+//     console.log(err);
+// });
+
+async function getpromise6(user){
+    try{
+    const response=await promise6;
+    console.log(response);
+    }
+    catch(err){
+        console.log(err);
+    }
+};
+
+getpromise6();
+
+
+// async function getUserinfo(){
+//     try {
+//         const response= await fetch('https://api.github.com/users/bettercodevivek');
+//         const data= await response.json();
+//         console.log(data);
+//     } catch (error) {
+//         console.log('E:-',error);
+//     }
+// }
+
+// getUserinfo();
+
+
+fetch('https://api.github.com/users/bettercodevivek')
+.then((response)=>{
+    return response.json();
+})
+.then((data)=>{
+    console.log(data);
+})
+.catch((err)=>{
+    console.log(err);
+});
+   
