@@ -98,8 +98,24 @@
 
 <div id="test-div2">
 </div>
-    <script>
 
+<div id="test-div3"></div>
+<button onclick="xmltest()">click me</button>
+    <script>
+    function xmltest(){
+    const url='https://api.github.com/users/bettercodevivek';
+    const xhr=new XMLHttpRequest();
+    var data1;
+    xhr.onload=function(){
+      data1=JSON.parse(this.responseText);
+        document.querySelector('#test-div3').innerHTML=data1.location;
+    }
+       xhr.open('GET',url);
+       xhr.send();
+      xhr.onreadystatechange=function(){
+        console.log(xhr.readyState);
+      }
+    }
       setInterval(dateshower,1000);
 
       function dateshower(){
