@@ -942,7 +942,7 @@ promise2.then(function(user){
 
 const promise3=new Promise(function(resolve,reject){
     setTimeout(function(){
-          let error=false;
+          let error=true;
           if(!error){
             resolve({username:'vivek',password:'123456'});
           }
@@ -959,4 +959,44 @@ promise3.then((user)=>{
     console.log(username);
 }).catch((error)=>{
     console.log(error);
-});
+}).finally(()=>{
+    console.log('kaam hogya bhai');
+})
+
+
+const promise5=new Promise(function(resolve,reject){
+    setTimeout(function(){   
+        let error=true;
+        if(!error){
+            resolve({name:'javascript',pwd:'123456789'});
+        }
+        else{
+            reject('error occured bro!');
+        }
+    },4000);
+})
+
+async function consumepromise5(){
+   try {
+    const response=await promise5;
+    console.log(response);
+   } catch (error) {
+    console.log(error);
+   }
+}
+
+consumepromise5();
+
+
+async function getUser(){
+  try {
+    const resp=await fetch('https://api.github.com/users/bettercodevivek');
+
+  const data= await resp.json();
+  console.log(data);
+  } catch (error) {
+    console.log("E:",error);
+  }
+}
+
+getUser();
