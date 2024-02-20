@@ -901,3 +901,15 @@ console.log('3');
 
 // thus we can clearly see that, even if 0 is the time give to setTimeout, 3 get printed in console before 2 as it is an async function.
 
+// let myPromise = new Promise(function(myResolve, myReject) {
+//     // "Producing Code" (May take some time)
+    
+//       myResolve(); // when successful
+//       myReject();  // when error
+//     });
+    
+//     // "Consuming Code" (Must wait for a fulfilled Promise)
+//     myPromise.then(
+//       function(value) { /* code if successful */ },
+//       function(error) { /* code if some error */ }
+//     );

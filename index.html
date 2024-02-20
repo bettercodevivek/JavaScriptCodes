@@ -101,14 +101,36 @@
 
 <div id="test-div3"></div>
 <button onclick="xmltest()">click me</button>
+
+<div id="test-div4"></div>
+<button onclick="promisetest()">click for promise</button>
     <script>
+    
+  function promisetest(something){
+    document.querySelector('#test-div4').innerHTML=something;
+  }
+
+  let prom1=new Promise(function(resolve,reject){
+    let x=10;
+    if(x==10){
+    resolve('this is a resolve');
+    }
+    else
+    reject('this is a reject');
+  });
+
+  prom1.then(
+    function(value){promisetest(value);},
+    function(error){promisetest(error);}
+  );
+
     function xmltest(){
     const url='https://api.github.com/users/bettercodevivek';
     const xhr=new XMLHttpRequest();
     var data1;
     xhr.onload=function(){
       data1=JSON.parse(this.responseText);
-        document.querySelector('#test-div3').innerHTML=data1.location;
+        document.querySelector('#test-div3').innerHTML=data1.name;
     }
        xhr.open('GET',url);
        xhr.send();
