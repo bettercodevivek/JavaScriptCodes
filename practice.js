@@ -913,3 +913,50 @@ console.log('3');
 //       function(value) { /* code if successful */ },
 //       function(error) { /* code if some error */ }
 //     );
+
+let promise1=new Promise(function(resolve,reject){
+      setTimeout(function(){
+        console.log('async task complete');
+        resolve();
+      },1000);
+});
+
+promise1.then(
+    function(){
+        console.log('promise consumed');
+    }
+);
+
+
+const promise2=new Promise(function(resolve,reject){
+    setTimeout(function(){
+         console.log('promise 2 consumed');
+    },2000);
+    resolve({username:'vivek',email:'bhati@example.com'});
+});
+
+promise2.then(function(user){
+    console.log(user);
+});
+   
+
+const promise3=new Promise(function(resolve,reject){
+    setTimeout(function(){
+          let error=false;
+          if(!error){
+            resolve({username:'vivek',password:'123456'});
+          }
+          else{
+            reject('ERROR!something went wrong');
+          }
+    },3000);
+});
+
+promise3.then((user)=>{
+    console.log(user);
+    return user.username;
+}).then((username)=>{
+    console.log(username);
+}).catch((error)=>{
+    console.log(error);
+});
