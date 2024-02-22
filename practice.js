@@ -1061,3 +1061,23 @@ fetch('https://api.github.com/users/bettercodevivek')
     console.log(err);
 });
    
+
+const promis1=new Promise(function(resolve,reject){
+    setTimeout(function(){
+          let x=true;
+
+          if(!true){
+            resolve({name:'spiderman',place:'ontario'});
+          }
+          else{
+            reject('ERRORRRR!!')
+          }
+    },7000)
+});
+
+promis1.then((value)=>{
+    console.log('done');
+})
+.catch((err)=>{
+    console.log(err);
+});
