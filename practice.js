@@ -1064,7 +1064,7 @@ fetch('https://api.github.com/users/bettercodevivek')
 
 const promis1=new Promise(function(resolve,reject){
     setTimeout(function(){
-          let x=true;
+          let x=false;
 
           if(!true){
             resolve({name:'spiderman',place:'ontario'});
