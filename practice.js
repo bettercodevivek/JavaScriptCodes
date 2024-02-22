@@ -1066,7 +1066,7 @@ const promis1=new Promise(function(resolve,reject){
     setTimeout(function(){
           let x=false;
 
-          if(!true){
+          if(!x){
             resolve({name:'spiderman',place:'ontario'});
           }
           else{
@@ -1076,7 +1076,11 @@ const promis1=new Promise(function(resolve,reject){
 });
 
 promis1.then((value)=>{
-    console.log('done');
+    console.log(value);
+    return value.place;
+})
+.then((place)=>{
+    console.log(place);
 })
 .catch((err)=>{
     console.log(err);
