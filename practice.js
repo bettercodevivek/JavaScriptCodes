@@ -1085,3 +1085,12 @@ promis1.then((value)=>{
 .catch((err)=>{
     console.log(err);
 });
+
+console.log("revising all the javascript that i wrote here");
+let ans=0;
+for(let i=0;i<10;i++){
+   ans=i*2;
+}
+
+console.log(ans);
+
