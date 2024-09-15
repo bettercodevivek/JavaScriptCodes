@@ -20,3 +20,23 @@ In strict mode, any assignment to a non-writable property, a getter-only propert
 
 // USE STRICT SHOULD ONLY BE MENTIONED IN THE STARTING OF THE SCRIPT ONLY THEN IT IS RECOGNIZED.
 
+// batman = 8 ;
+// console.log(batman);
+
+
+var name1 = 'mahesh';
+var name2 = 'ramesh';
+
+console.log(name1,name2);
+
+function Tester(){
+    name1='batman'
+    name2='robin'
+
+    return name1+name2
+}
+
+console.log(Tester());
+
+
+// var keyword can be used to declare variables
