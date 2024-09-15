@@ -39,4 +39,44 @@ function Tester(){
 console.log(Tester());
 
 
-// var keyword can be used to declare variables
+// var keyword can be used to declare variables and those variables can be reassigned values.
+
+let name3='leonard';
+let name4='sheldon';
+
+console.log(name3,name4);
+
+function Tester2(){
+  name3='penny';
+  name4='amy';
+
+  return name3+name4
+}
+
+console.log(Tester2());
+
+// let also declares variables and those variables too can be reassigned values. Then what is the actual difference between let and var ?
+
+if (true) {
+    var x = 5;
+    let y = 10;
+}
+console.log(x); // 5
+//console.log(y); // ReferenceError: y is not defined
+
+// let has a block {} scope which means, if declared within {} then it is not accessible outside.
+
+// Variables declared with var are hoisted to the top of their scope and initialized with undefined. This means you can reference them before the line where they are declared, though the value will be undefined until it’s initialized.
+
+// Variables declared with let are also hoisted, but they are not initialized. This leads to a "Temporal Dead Zone" where you can't access the variable before its declaration.
+
+// console.log(table);
+
+// console.log(table1);
+
+// var table='charles';
+
+// let table1='chuck';
+
+// let variables cannot be hoisted.
+
