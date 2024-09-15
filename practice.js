@@ -38,7 +38,7 @@ console.log(typeof carname);
 
 // if you dont define your variable value, then it be undefined.
 
-// you cannot redeclare a variable if it is already declared using let or var, but you can redeclare the variable if it is declared using var.
+// you cannot redeclare a variable if it is already declared using let or const, but you can redeclare the variable if it is declared using var.
 
 var name1="hello";
 var name1="notello";
