@@ -80,3 +80,59 @@ console.log(x); // 5
 
 // let variables cannot be hoisted.
 
+// console.log(name5);
+
+const name5='john';
+
+const name6='peter';
+
+console.log(name5,name6);
+
+// name5='vivek';
+
+// console.log(name5); // gives assignment to constant variable error 
+
+// const declared variables cannot be hoisted.
+
+
+// let us now see the usage of const variable for arrays and objects.
+
+// const array1 = ['cherry','banana','apple'];
+
+// array1=['orange','banana','apple'];
+
+// console.log(array1);
+
+// this gives assignment to constant variable error
+
+// but in an array you can reassign individual values using indexing
+
+const arr1=[1,2,3,4,5];
+
+arr1[3]=24;
+
+console.log(arr1);
+
+
+const obj1 ={
+    name:'vivek',
+    age:18,
+    time:2002
+}
+
+// obj1={
+//     name:'dave',
+//     age:18,
+//     time:2002
+// }
+
+// console.log(obj1);
+
+// This also gives assignment to constant variable error
+
+// but you can modify individual values like array
+
+
+obj1.name='dave';
+
+console.log(obj1);
