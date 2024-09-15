@@ -136,3 +136,60 @@ const obj1 ={
 obj1.name='dave';
 
 console.log(obj1);
+
+
+// When we talk about operators in javascript then its the same as any other language.
+
+/* 1. arithmetic operators
+   2. comparison operators
+   3.logical operators
+   4.assignment operators
+   5.ternary operators
+   */
+
+   // let us understand a bit more about ternary operator
+
+   // it is just a shorthand way of writing a if else statement and is called ternary because of 3 operands.
+
+   // SYNTAX ==> condition ? expressionIfTrue : expressionIfFalse;
+
+let age = 20;
+let isAdult;
+
+if (age >= 18) {
+  isAdult = "Yes";
+} else {
+  isAdult = "No";
+}
+console.log(isAdult);  // Output: "Yes"
+
+// now using ternary operator
+
+
+let age1=20;
+
+let isAdult1= age1>=18 ? "yes" : "no" ;
+
+console.log(isAdult1);
+
+let newName = 'vivek';
+
+console.log(newName[0]=='b' ? "contains B" : "Doesn't contain B");
+
+
+// Let us now see functions in javascript
+
+
+function Demo(){
+    console.log("Hello World!")
+}
+
+Demo();
+
+
+function Adder(num1,num2){
+ return num1+num2;
+}
+
+console.log(Adder(25,26));
+
