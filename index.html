@@ -339,9 +339,15 @@ const Historyfunc = () =>{
 
 function eventChecker(){
   const button = document.getElementById('event-button');
+  const slider = document.getElementById('slider');
   button.addEventListener('click',(e)=>{
      const x = e.screenX;
-     alert( x > 100 ? 'Eureka ' : 'Nuh uh');
+    if(x >= 50){
+         slider.style.backgroundColor='red';
+    }
+    else{
+      slider.style.backgroundColor='yellow';
+    }
   })
 
 }
