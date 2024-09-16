@@ -226,6 +226,8 @@ console.log(object2);
 
 //  agar object mein aap ek key-value pair, mein function() likhdo usse hi object method bolte hai.
 
+// There are 2 ways to define a object method, first is traditional method of using function expression, given below:-
+
 const object3 = {
   fname:'batman',
   lname:'kumar',
@@ -236,3 +238,15 @@ const object3 = {
 
 object3.fullname();
 
+
+// second method is a shorthand way of writing object method provided in ES6 JS
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  fullName(){
+   console.log(this.firstName + this.lastName);
+  }
+};
+
+person.fullName() ; // Output: "John Doe"
