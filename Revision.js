@@ -200,3 +200,39 @@ console.log(var1[2]==4 ? "True Boss" : "False Boss");
 
 // Let us now talk about objects in javascripts
 
+
+// objects can be defined as literals and constructors.
+
+// 1. objects as literals
+
+const object1 = {
+  name:"vivek singh",
+  age:20,
+  standard:12,
+  country:"India"
+}
+
+console.log(object1);
+
+// 2. object as constructors
+
+const object2 = new Object();
+
+object2.name2="vivek";
+object2.age2=21;
+
+console.log(object2);
+
+
+//  agar object mein aap ek key-value pair, mein function() likhdo usse hi object method bolte hai.
+
+const object3 = {
+  fname:'batman',
+  lname:'kumar',
+  fullname:function(){
+    console.log(this.fname + this.lname);
+  }
+}
+
+object3.fullname();
+
