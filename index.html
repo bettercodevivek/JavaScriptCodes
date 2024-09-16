@@ -50,6 +50,9 @@
    
    </table>
 
+
+   <button onclick=eventChecker() id="event-button" style="background-color: aqua; padding: 12px; border-radius: 12px; border-color: black;">Click for event test</button>
+
    <button style="background-color: blue;" onclick="Historyfunc()">Go Back</button>
 
 
@@ -333,6 +336,16 @@ switch(inp){
 const Historyfunc = () =>{
   window.history.back()
 }
+
+function eventChecker(){
+  const button = document.getElementById('event-button');
+  button.addEventListener('click',(e)=>{
+     const x = e.screenX;
+     alert( x > 100 ? 'Eureka ' : 'Nuh uh');
+  })
+
+}
+
     </script>
 </body>
 </html>
