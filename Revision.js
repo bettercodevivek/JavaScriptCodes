@@ -283,3 +283,16 @@ person.fullName() ; // Output: "John Doe"
   // 3. Object.entries(): Returns an array of key-value pairs.
   
     console.log(Object.values(object3));
+
+  // 4. Object.assign(target, source) : Copies properties from a source object to a target object
+
+     const target = {}
+
+     const source = {
+      src1:"john",
+      crc1:"hopkins"
+     }
+
+    Object.assign(target,source);
+
+    console.log(target);
