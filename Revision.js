@@ -296,3 +296,23 @@ person.fullName() ; // Output: "John Doe"
     Object.assign(target,source);
 
     console.log(target);
+
+
+ // 5. Object.groupBy() is a new method introduced in ECMAScript 2024 (ES2024), and it's used to group elements of an array based on a given criterion or key. 
+ //    The result is an object where each key represents a group, and the corresponding value is an array of items belonging to that group.
+
+//  const words = ["apple", "banana", "apricot", "blueberry", "cherry"];
+
+//  const grouped = Object.groupBy(words, word => word[0]);
+ 
+//  console.log(grouped);
+ // Output:
+ // {
+ //   a: ["apple", "apricot"],
+ //   b: ["banana", "blueberry"],
+ //   c: ["cherry"]
+ // }
+
+ //ES2024 features are relatively new.
+
+// Older browsers may need an alternative code (Polyfill)
