@@ -267,3 +267,19 @@ person.fullName() ; // Output: "John Doe"
   }
 
   person2.nameteller();
+
+
+  // Let us now talk about predefined object methods
+
+  // 1. Object.keys() method : Returns an array of an object’s keys.
+
+   console.log(Object.keys(object2));
+
+
+  // 2. Object.values() method : Returns an array of an object’s values.
+
+    console.log(Object.values(object2));
+    
+  // 3. Object.entries(): Returns an array of key-value pairs.
+  
+    console.log(Object.values(object3));
