@@ -250,3 +250,20 @@ const person = {
 };
 
 person.fullName() ; // Output: "John Doe"
+
+/*The this keyword inside an object method refers to the object itself.
+
+  It allows access to the object’s properties within its methods. */
+
+
+  // you can also add method to an existing object in the following manner :- 
+
+  const person2 = {
+    name:"henry"
+  }
+
+  person2.nameteller = function(){
+    console.log(this.name + "hello sir !");
+  }
+
+  person2.nameteller();
