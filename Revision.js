@@ -421,3 +421,21 @@ console.log(fruits.sort())
  const product = numbers3.reduce((acc,ini)=>acc*ini,1);
 
  console.log(product)
+
+
+ // Let us study about strings now
+
+
+ const str1 = "hellobro";
+
+ console.log(str1.charAt(0));
+
+ console.log(str1.charCodeAt(0));
+
+ console.log(str1.endsWith('o'));
+
+ console.log(str1.lastIndexOf('o'));
+
+ console.log(str1.length);
+
+ console.log(str1.toUpperCase());
