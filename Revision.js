@@ -407,3 +407,17 @@ console.log(fruits.sort())
 
 
  console.log(names.filter( name => name.includes('n')));
+
+
+ // 10. reduce(): To execute a reducer function (that you provide) on each element of the array, resulting in a single output value.
+
+ const numbers2 = [1, 2, 3, 4];
+ const sum = numbers2.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+ console.log(sum);  // Output: 10
+
+ const numbers3 = [2,4,6,8,10,12];
+
+ const product = numbers3.reduce((acc,ini)=>acc*ini,1);
+
+ console.log(product)
