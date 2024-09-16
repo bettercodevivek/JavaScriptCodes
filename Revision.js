@@ -338,9 +338,29 @@ Array1.push(12);
 
 console.log(Array1);
 
-// pop(): Removes the last element from the array.
-
+// 2. pop(): Removes the last element from the array.
 
 Array1.pop()
 
 console.log(Array1);
+
+
+// 3. shift(): Removes the first element from the array.
+
+Array1.shift();
+
+console.log(Array1);
+
+// 4.unshift():  Adds one or more elements to the beginning of the array.
+
+Array1.unshift(1,11);
+
+console.log(Array1);
+
+// 5. concat(): Merges two or more arrays.
+
+const Array2 = ['hello','namaste','hola']
+
+const TotalArray = Array1.concat(Array2);
+
+console.log(TotalArray)
