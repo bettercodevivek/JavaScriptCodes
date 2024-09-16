@@ -364,3 +364,46 @@ const Array2 = ['hello','namaste','hola']
 const TotalArray = Array1.concat(Array2);
 
 console.log(TotalArray)
+
+// 6. join(): Joins all elements of an array into a string.
+
+
+ const fruits = ['guava','banana','apple']
+
+ console.log(fruits.join(" "));
+
+// 7. reverse(): Reverses the order of the elements in the array.
+
+// 8. sort(): Sorts the elements of the array (default is alphabetical order).
+
+
+console.log(fruits.sort())
+
+
+// IMP. METHODS
+
+// 8. map(): Creates a new array by applying a function to each element.
+
+ const numbers = [2,4,6,8,10,12];
+
+ const Mappednumbers = numbers.map(n=>n/2);
+
+ console.log(Mappednumbers)
+
+ // let us see some more examples of map 
+
+ const names = ['john','tedh','red','andy','chris']
+
+ const Mappednames = names.map(name => name[1]=='e');
+
+ console.log(Mappednames)
+
+ // 9. filter(): To create a new array with all elements that pass the test implemented by the provided function.
+
+ const numbers1 = [1, 2, 3, 4, 5];
+ const evens = numbers1.filter(num => num % 2 === 0);
+
+ console.log(evens);  // Output: [2, 4]
+
+
+ console.log(names.filter( name => name.includes('n')));
