@@ -193,3 +193,10 @@ function Adder(num1,num2){
 
 console.log(Adder(25,26));
 
+let var1 = [1,2,3,4,5]
+
+console.log(var1[2]==4 ? "True Boss" : "False Boss");
+
+
+// Let us now talk about objects in javascripts
+
