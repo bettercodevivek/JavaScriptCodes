@@ -316,3 +316,31 @@ person.fullName() ; // Output: "John Doe"
  //ES2024 features are relatively new.
 
 // Older browsers may need an alternative code (Polyfill)
+
+
+// LEt us now talk about arrays in javascript
+
+// js arrays are dynamic.
+
+const Array1 = [1,2,3,4,5,6,7]
+
+console.log(Array1.length);
+
+// length property tells the size of an array.
+
+
+// Let us see array methods now
+
+
+// 1. push(): Adds one or more elements to the end of the array.
+
+Array1.push(12);
+
+console.log(Array1);
+
+// pop(): Removes the last element from the array.
+
+
+Array1.pop()
+
+console.log(Array1);
