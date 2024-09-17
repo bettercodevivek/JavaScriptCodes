@@ -6,6 +6,33 @@
     <title>Project 1</title>
 </head>
 <body>
-    
+    <h1 style="text-align: center; font-size:x-large;">TODO LIST</h1>
+    <form id="form" style="text-align: center; position: relative; top:20vh;">
+        <input id="task" style="padding: 16px;" type="text" placeholder="Enter your task">
+        <button type="button" id="button" style="padding: 16px;">Add this task +</button>
+        <ul id="list">
+
+        </ul>
+    </form>
 </body>
 </html>
+
+<script>
+function TaskAdder(){
+    const button=document.getElementById('button');
+    const task=document.getElementById('task');
+    button.addEventListener('click', (event) => {
+        event.preventDefault();
+        const value=task.value;
+      if(value){
+        console.log(value);
+      }       
+      else {
+        console.log("enter task")
+      }
+      
+    })
+}
+
+TaskAdder()
+</script>
