@@ -26,14 +26,9 @@ function TaskAdder(){
         event.preventDefault();
         const value=task.value;
       if(value){
-         // Create a new list item (li) element
-         const listItem = document.createElement('li');
-            listItem.textContent = value; // Set the text content of the list item to the task
-
-            // Append the new task (li) to the list (ul)
-            list.appendChild(listItem);
-
-            task.value = ''; // Clear the input field after adding the task 
+        const listItem = document.createElement('li');
+        listItem.textContent=value;
+        list.appendChild(listItem);
       }
       else{
         alert("enter a task")
