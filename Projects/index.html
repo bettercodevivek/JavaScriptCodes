@@ -21,14 +21,15 @@
 function TaskAdder(){
     const button=document.getElementById('button');
     const task=document.getElementById('task');
+    const list=document.getElementById('list');
     button.addEventListener('click', (event) => {
         event.preventDefault();
         const value=task.value;
       if(value){
-        console.log(value);
-      }       
-      else {
-        console.log("enter task")
+        list.innerHTML=`<li>${value}</li>`
+      }
+      else{
+        alert("enter a task")
       }
       
     })
