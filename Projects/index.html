@@ -18,8 +18,8 @@
    <div style="display: flex; flex-direction: column; position: relative; top: 200px; width:40vw; align-items: center; justify-content: center;">
     <h1 style="text-align: center;">CALCULATOR</h1>
     <input style="padding: 20px;" type="text" readonly >
-    <div style="display:flex; flex-direction: row; gap: 10px; position: relative; top:50px">
-      <input type="button" value=0>
+    <div id="numeral-container" style="display:flex; flex-direction: row; gap: 10px; position: relative; top:50px">
+      <input id="input" type="button" value=0>
       <input type="button" value=1>
       <input type="button" value=2>
       <input type="button" value=3>
@@ -34,6 +34,7 @@
       <input type="button" value=/>
       <input type="button" value=x>
       <input type="button" value=//>
+      <button>calc </button>
     </div>
    </div>
 </body>
@@ -57,6 +58,11 @@ function TaskAdder(){
       }
       
     })
+}
+
+function valueReader(){
+ 
+ 
 }
 
 TaskAdder()
