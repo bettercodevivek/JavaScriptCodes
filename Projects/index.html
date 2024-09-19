@@ -15,28 +15,29 @@
         </ul>
     </form>
 
-   <div style="display: flex; flex-direction: column; position: relative; top: 200px; width:40vw; align-items: center; justify-content: center;">
-    <h1 style="text-align: center;">CALCULATOR</h1>
-    <input style="padding: 20px;" type="text" readonly >
-    <div id="numeral-container" style="display:flex; flex-direction: row; gap: 10px; position: relative; top:50px">
-      <input id="input" type="button" value=0>
-      <input type="button" value=1>
-      <input type="button" value=2>
-      <input type="button" value=3>
-      <input type="button" value=4>
-      <input type="button" value=5>
-      <input type="button" value=6>
-      <input type="button" value=7>
-      <input type="button" value=8>
-      <input type="button" value=9>
-      <input type="button" value=+>
-      <input type="button" value=->
-      <input type="button" value=/>
-      <input type="button" value=x>
-      <input type="button" value=//>
-      <button>calc </button>
+    <div class="calculator">
+      <div class="display" id="display">0</div>
+      <div class="buttons">
+        <button class="btn" data-value="7">7</button>
+        <button class="btn" data-value="8">8</button>
+        <button class="btn" data-value="9">9</button>
+        <button class="btn" data-value="/">/</button>
+        <button class="btn" data-value="4">4</button>
+        <button class="btn" data-value="5">5</button>
+        <button class="btn" data-value="6">6</button>
+        <button class="btn" data-value="*">*</button>
+        <button class="btn" data-value="1">1</button>
+        <button class="btn" data-value="2">2</button>
+        <button class="btn" data-value="3">3</button>
+        <button class="btn" data-value="-">-</button>
+        <button class="btn" data-value="0">0</button>
+        <button class="btn" data-value=".">.</button>
+        <button class="btn" data-value="=">=</button>
+        <button class="btn" data-value="+">+</button>
+        <button class="btn" id="clear">C</button>
+      </div>
     </div>
-   </div>
+   
 </body>
 </html>
 
