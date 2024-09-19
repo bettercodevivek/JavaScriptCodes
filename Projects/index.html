@@ -48,10 +48,48 @@
          </div>
          <button id="right">Right</button>
       </div>
+
+      <button style="position: relative; top:400px ; padding: 20px;" id="bg-changer">Change Bg</button>
 </body>
 </html>
 
 <script>
+
+const btn = document.getElementById('bg-changer');
+btn.addEventListener('keypress',()=>{
+  const key = event.key;
+
+  switch(key){
+    case 'a': document.body.style.backgroundColor='red';
+    break;
+
+    case 'b': document.body.style.backgroundColor='blue';
+    break;
+
+    case 'c': document.body.style.backgroundColor='cyan';
+    break;
+
+    case 'd': document.body.style.backgroundColor='green';
+    break;
+
+    case 'e': document.body.style.backgroundColor='yellow';
+    break;
+
+    case 'f': document.body.style.backgroundColor='pink';
+    break;
+
+    case 'g': document.body.style.backgroundColor='orange';
+    break;
+
+    case 'h': document.body.style.backgroundColor='amber';
+    break;
+
+  }
+})
+
+
+
+
 function TaskAdder(){
     const button=document.getElementById('button');
     const task=document.getElementById('task');
