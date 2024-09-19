@@ -106,7 +106,13 @@ clearButton.addEventListener('click', () => {
 
 const creator=document.getElementById('creator');
 
-creator.addEventListener('keypress',(e)=>{
-  console.log(event.key);
+creator.addEventListener('keypress',()=>{
+  const key=event.key;
+  if(key=='a' || key=='b'){
+    display.innerText='hello world';
+  }
+  else{
+    display.style.backgroundColor='red';
+  }
 })
 </script>
