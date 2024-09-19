@@ -41,10 +41,12 @@
       <button id="creator" style="position: relative;top:20px;">ELEMENT CREATOR</button>
 
 
-      <div style="position: relative; top:100px" id="slider-container">
+      <div style="position: relative; top:100px ; display:flex; flex-direction: row;" id="slider-container">
+        <button id="left">Left</button>
          <div style = "border: solid; width: fit-content;" id="image-container">
-          <img style="height: 500px;" src="/Screenshot (19).png">
+          <img id="image" style="height: 500px;" src="/Screenshot (19).png">
          </div>
+         <button id="right">Right</button>
       </div>
 </body>
 </html>
@@ -122,4 +124,39 @@ creator.addEventListener('keypress',()=>{
     display.style.backgroundColor='red';
   }
 })
+
+// function ImageChanger () {
+
+// let curr_id = 0 ;
+
+// const image = document.getElementById('image');
+
+// const images = ['/Screenshot (19).png', '/Screenshot (21).png']
+
+// images.map((img,index)=>{
+//   if(curr_id === index){
+//     image.setAttribute('src',img);
+//   }
+// })
+
+// curr_id = (curr_id + 1);
+
+// }
+
+// document.getElementById('right').addEventListener('click',ImageChanger);
+
+const left = document.getElementById('left');
+const right = document.getElementById('right');
+const image = document.getElementById('image')
+
+left.addEventListener('click',()=>{
+  image.setAttribute('src','/Screenshot (21).png');
+})
+
+
+right.addEventListener('click',()=>{
+  image.setAttribute('src','/Screenshot (19).png');
+})
+
+
 </script>
