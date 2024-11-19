@@ -32,12 +32,12 @@ body {
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: #666;
-    display: none;
+    display: block;
 }
 
-/* #answer.hidden {
+#answer.hidden {
     display: none;
-} */
+}
 
 /* Buttons */
 button {
