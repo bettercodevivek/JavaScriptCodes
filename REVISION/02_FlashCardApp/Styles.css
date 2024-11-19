@@ -35,9 +35,9 @@ body {
     display: none;
 }
 
-#answer.hidden {
+/* #answer.hidden {
     display: none;
-}
+} */
 
 /* Buttons */
 button {
