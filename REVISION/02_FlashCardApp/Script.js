@@ -21,46 +21,42 @@ const Questions = [
     },
 ];
 
-let currentIndex = 0;
 
-const QuestionElement = document.getElementById("question");
-const AnswerElement = document.getElementById("answer");
-const prevBtn = document.getElementById("prev-btn");
-const nextBtn = document.getElementById("next-btn");
-const ProgressElement = document.getElementById("progress");
-const showAnswerBtn = document.getElementById("show-answer-button");
+let CurrentIndex = 0
 
-// Show the current question and update progress
-function ShowQuestion() {
-    const CurrentQues = Questions[currentIndex];
-    QuestionElement.textContent = CurrentQues.question; // Set question text
-    AnswerElement.textContent = ""; // Clear the answer
-    // AnswerElement.classList.add("hidden"); // Hide the answer
-    ProgressElement.textContent = `Card ${currentIndex + 1} of ${Questions.length}`; // Update progress
+const QuestionELement = document.getElementById("question")
+const AnswerElement = document.getElementById("answer")
+const nextBtn = document.getElementById("next-btn")
+const prevBtn = document.getElementById("prev-btn")
+const showBtn = document.getElementById("show-answer-button")
+const Progress = document.getElementById("progress")
+
+function ShowQuestion(){
+    const Question = Questions[CurrentIndex]
+    QuestionELement.textContent = Question.question;
+    AnswerElement.textContent = " "
+    Progress.textContent=`Card ${CurrentIndex+1} of ${Questions.length}`
 }
 
-// Show the answer when "Show Answer" is clicked
-showAnswerBtn.addEventListener("click", () => {
-    const CurrentQues = Questions[currentIndex];
-    AnswerElement.textContent = CurrentQues.answer;
-    // AnswerElement.classList.remove("hidden"); // Unhide the answer
-});
+showBtn.addEventListener("click",ShowAnswer)
 
-// Navigate to the next question
-nextBtn.addEventListener("click", () => {
-    if (currentIndex < Questions.length - 1) {
-        currentIndex++;
-        ShowQuestion(); // Update question
+function ShowAnswer(){
+   AnswerElement.textContent=Questions[CurrentIndex].answer
+}
+
+nextBtn.addEventListener("click",()=>{
+    if(CurrentIndex <= Questions.length-1){
+        CurrentIndex++;
+        ShowQuestion();
     }
-});
+    })
 
-// Navigate to the previous question
-prevBtn.addEventListener("click", () => {
-    if (currentIndex > 0) {
-        currentIndex--;
-        ShowQuestion(); // Update question
+prevBtn.addEventListener("click",()=>{
+    if(CurrentIndex > 0){
+        CurrentIndex--;
+        ShowQuestion();
     }
-});
+})
 
-// Initialize the app
 ShowQuestion();
+
